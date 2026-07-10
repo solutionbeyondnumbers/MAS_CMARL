@@ -1,0 +1,6 @@
+scenario_key,scenario_name,description,risk_multiplier,delay_multiplier,demand_multiplier,cost_multiplier
+normal,normal,Historical operating condition.,1.0,1.0,1.0,1.0
+demand_surge,demand_surge,Demand surge increases fulfillment pressure.,1.08,1.05,1.3,1.04
+logistics_disruption,logistics_disruption,Transport disruption increases delay and risk exposure.,1.22,1.35,1.0,1.08
+supplier_shock,supplier_shock,Supplier-side shock increases shortage and procurement cost.,1.28,1.16,1.05,1.14
+combined_stress,combined_stress,"Combined demand, supplier, and logistics stress condition.",1.38,1.42,1.25,1.18

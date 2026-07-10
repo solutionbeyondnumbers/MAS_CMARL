@@ -1,0 +1,1550 @@
+{
+    "generated_at": "2026-06-23 16:38:20",
+    "actual_outputs_only": true,
+    "dashboard_type": "single_page_clickable_extension",
+    "dataset1": {
+        "dataset_name": "Dataset 1: DataCo Supply Chain",
+        "status": "AVAILABLE",
+        "ml": {},
+        "policy": {
+            "source_file": "outputs\\tables\\10_proposed_cmarl_stress_scenario_evaluation.csv",
+            "policy_name": "sthg_cmappo_risk_service_policy",
+            "policy_group": "N/A",
+            "mean_reward": 2.134965784242507,
+            "mean_risk": 0.1623396077116966,
+            "mean_delay": 0.3295895817378451,
+            "mean_service": 0.9337815496180404,
+            "mean_resilience": 0.9791632343851568,
+            "mean_cost": 241.0230297198553
+        },
+        "policy_improvement": {},
+        "stress": {},
+        "note": "Dataset 1 values are discovered from actual existing CSV outputs. If a field is N/A, source file was not found automatically."
+    },
+    "dataset2": {
+        "dataset_name": "Dataset 2: Olist Brazilian E-Commerce",
+        "status": "LOCKED",
+        "ml": {
+            "best_model": "CatBoost",
+            "best_feature_set": "Proposed-RGC-Optimized",
+            "accuracy": 0.973192093738904,
+            "macro_f1": 0.9738804745739102,
+            "roc_auc": 0.9986833020174524
+        },
+        "policy": {
+            "best_baseline_reward": 7.478605240017239,
+            "best_proposed_reward": 8.31062975777175,
+            "reward_improvement": 11.125396929663223,
+            "risk_reduction": 13.1631564650921,
+            "delay_reduction": 15.191429923927558,
+            "service_improvement": 5.370314190038958,
+            "resilience_improvement": 6.396745835911314,
+            "cost_reduction": 3.3159483448557245,
+            "profit_improvement": 5.730208505610248
+        },
+        "strength": {
+            "total_checks": 5,
+            "passed_checks": 5
+        },
+        "stress": {
+            "scenario_count": 6,
+            "mean_reward_improvement": 13.776930922409392,
+            "mean_risk_reduction": 14.925118455217444,
+            "mean_delay_reduction": 13.729225248040338,
+            "mean_service_improvement": 10.017993365647524,
+            "mean_resilience_improvement": 8.133587180468831,
+            "reward_positive_rate": 100.0
+        },
+        "policy_rows": [
+            {
+                "policy_name": "random_policy",
+                "policy_group": "Baseline",
+                "split": "train",
+                "scenario": "normal",
+                "coordinated_action": 0,
+                "rows": 78855,
+                "mean_reward": 7.099729270108536,
+                "total_reward": 559849.1515944087,
+                "std_reward": 0.9246602003167588,
+                "mean_risk": 0.1327744278387064,
+                "mean_delay": 0.1496957607783207,
+                "mean_service": 0.8983699698101285,
+                "mean_resilience": 0.8118667778916955,
+                "mean_cost": 0.3871884092176867,
+                "mean_profit_proxy": 0.801560890339451,
+                "dominant_action": "seller_risk_avoidance",
+                "dominant_action_percent": 20.26377528374865,
+                "action_entropy": 1.6094120898478697,
+                "unique_actions_used": 5
+            },
+            {
+                "policy_name": "cost_priority_policy",
+                "policy_group": "Baseline",
+                "split": "train",
+                "scenario": "normal",
+                "coordinated_action": 0,
+                "rows": 78855,
+                "mean_reward": 6.437165705403501,
+                "total_reward": 507602.7016995931,
+                "std_reward": 1.1444562872362654,
+                "mean_risk": 0.1956604288419595,
+                "mean_delay": 0.2148758044037935,
+                "mean_service": 0.8009277399149689,
+                "mean_resilience": 0.6600181985310538,
+                "mean_cost": 0.2792998628690548,
+                "mean_profit_proxy": 0.7697702583493864,
+                "dominant_action": "cost_priority_fulfillment",
+                "dominant_action_percent": 100.0,
+                "action_entropy": 0.0,
+                "unique_actions_used": 1
+            },
+            {
+                "policy_name": "balanced_policy",
+                "policy_group": "Baseline",
+                "split": "train",
+                "scenario": "normal",
+                "coordinated_action": 0,
+                "rows": 78855,
+                "mean_reward": 6.9909486599801545,
+                "total_reward": 551271.2565827351,
+                "std_reward": 0.8854930083906831,
+                "mean_risk": 0.1486706829416489,
+                "mean_delay": 0.1605131671773325,
+                "mean_service": 0.8978161081010184,
+                "mean_resilience": 0.793368520090988,
+                "mean_cost": 0.3678070333991294,
+                "mean_profit_proxy": 0.7602741788776299,
+                "dominant_action": "balanced_fulfillment",
+                "dominant_action_percent": 100.0,
+                "action_entropy": 0.0,
+                "unique_actions_used": 1
+            },
+            {
+                "policy_name": "logistics_priority_policy",
+                "policy_group": "Baseline",
+                "split": "train",
+                "scenario": "normal",
+                "coordinated_action": 0,
+                "rows": 78855,
+                "mean_reward": 7.299446980912173,
+                "total_reward": 575597.8916798295,
+                "std_reward": 0.725255548475003,
+                "mean_risk": 0.136351327093596,
+                "mean_delay": 0.0738860546574547,
+                "mean_service": 0.9314380817904596,
+                "mean_resilience": 0.8206450510347669,
+                "mean_cost": 0.4240062829307254,
+                "mean_profit_proxy": 0.8142494528096234,
+                "dominant_action": "accelerated_logistics",
+                "dominant_action_percent": 100.0,
+                "action_entropy": 0.0,
+                "unique_actions_used": 1
+            },
+            {
+                "policy_name": "seller_risk_avoidance_policy",
+                "policy_group": "Baseline",
+                "split": "train",
+                "scenario": "normal",
+                "coordinated_action": 0,
+                "rows": 78855,
+                "mean_reward": 7.407576626287169,
+                "total_reward": 584124.4548658747,
+                "std_reward": 0.724784640444542,
+                "mean_risk": 0.0724577951581627,
+                "mean_delay": 0.1401827632966515,
+                "mean_service": 0.8978161081010184,
+                "mean_resilience": 0.9141931875383348,
+                "mean_cost": 0.4303572041869732,
+                "mean_profit_proxy": 0.8141125707060454,
+                "dominant_action": "seller_risk_avoidance",
+                "dominant_action_percent": 100.0,
+                "action_entropy": 0.0,
+                "unique_actions_used": 1
+            },
+            {
+                "policy_name": "service_priority_policy",
+                "policy_group": "Baseline",
+                "split": "train",
+                "scenario": "normal",
+                "coordinated_action": 0,
+                "rows": 78855,
+                "mean_reward": 7.361699844756364,
+                "total_reward": 580506.8412582631,
+                "std_reward": 0.6862286240820711,
+                "mean_risk": 0.1112400420763938,
+                "mean_delay": 0.1585128482342035,
+                "mean_service": 0.963609790425818,
+                "mean_resilience": 0.8702733024330603,
+                "mean_cost": 0.4347969480802957,
+                "mean_profit_proxy": 0.850075633179357,
+                "dominant_action": "service_recovery_priority",
+                "dominant_action_percent": 100.0,
+                "action_entropy": 0.0,
+                "unique_actions_used": 1
+            },
+            {
+                "policy_name": "rule_based_policy",
+                "policy_group": "Baseline",
+                "split": "train",
+                "scenario": "normal",
+                "coordinated_action": 0,
+                "rows": 78855,
+                "mean_reward": 7.14669328938667,
+                "total_reward": 563552.4993345859,
+                "std_reward": 0.6490545598481865,
+                "mean_risk": 0.1285377514122709,
+                "mean_delay": 0.1596697204695596,
+                "mean_service": 0.9358688582827516,
+                "mean_resilience": 0.8116856280908611,
+                "mean_cost": 0.3821298044567981,
+                "mean_profit_proxy": 0.7764176267402905,
+                "dominant_action": "balanced_fulfillment",
+                "dominant_action_percent": 72.79310126180964,
+                "action_entropy": 0.8224862234890687,
+                "unique_actions_used": 5
+            },
+            {
+                "policy_name": "q_table_policy",
+                "policy_group": "Baseline",
+                "split": "train",
+                "scenario": "normal",
+                "coordinated_action": 0,
+                "rows": 78855,
+                "mean_reward": 7.406647122357008,
+                "total_reward": 584051.1588334618,
+                "std_reward": 0.7281798048579765,
+                "mean_risk": 0.0756321579692956,
+                "mean_delay": 0.1414936706933138,
+                "mean_service": 0.9039233100782332,
+                "mean_resilience": 0.9127310621964086,
+                "mean_cost": 0.43079571358385,
+                "mean_profit_proxy": 0.8142041237513068,
+                "dominant_action": "seller_risk_avoidance",
+                "dominant_action_percent": 97.18216980533892,
+                "action_entropy": 0.1332432432018431,
+                "unique_actions_used": 4
+            },
+            {
+                "policy_name": "random_policy",
+                "policy_group": "Baseline",
+                "split": "valid",
+                "scenario": "normal",
+                "coordinated_action": 0,
+                "rows": 16897,
+                "mean_reward": 7.1196231958513065,
+                "total_reward": 120300.27314029953,
+                "std_reward": 0.7982585078896972,
+                "mean_risk": 0.1269277112196573,
+                "mean_delay": 0.1506108008441606,
+                "mean_service": 0.9163381106348422,
+                "mean_resilience": 0.7894145784610095,
+                "mean_cost": 0.3794330847151292,
+                "mean_profit_proxy": 0.8081498251609329,
+                "dominant_action": "accelerated_logistics",
+                "dominant_action_percent": 20.364561756524825,
+                "action_entropy": 1.609336479686179,
+                "unique_actions_used": 5
+            },
+            {
+                "policy_name": "cost_priority_policy",
+                "policy_group": "Baseline",
+                "split": "valid",
+                "scenario": "normal",
+                "coordinated_action": 0,
+                "rows": 16897,
+                "mean_reward": 6.4639859036969325,
+                "total_reward": 109221.96981476709,
+                "std_reward": 0.9494436208686906,
+                "mean_risk": 0.1856985370106761,
+                "mean_delay": 0.2165585573421355,
+                "mean_service": 0.8214706287372566,
+                "mean_resilience": 0.6357589521193246,
+                "mean_cost": 0.2758408690476163,
+                "mean_profit_proxy": 0.7749087575049842,
+                "dominant_action": "cost_priority_fulfillment",
+                "dominant_action_percent": 100.0,
+                "action_entropy": 0.0,
+                "unique_actions_used": 1
+            },
+            {
+                "policy_name": "balanced_policy",
+                "policy_group": "Baseline",
+                "split": "valid",
+                "scenario": "normal",
+                "coordinated_action": 0,
+                "rows": 16897,
+                "mean_reward": 7.019675427581307,
+                "total_reward": 118611.45569984136,
+                "std_reward": 0.7272677539033789,
+                "mean_risk": 0.1413660562755889,
+                "mean_delay": 0.1618214399678689,
+                "mean_service": 0.9192004559157076,
+                "mean_resilience": 0.7701715357654847,
+                "mean_cost": 0.3603461349686968,
+                "mean_profit_proxy": 0.767890721502879,
+                "dominant_action": "balanced_fulfillment",
+                "dominant_action_percent": 100.0,
+                "action_entropy": 0.0,
+                "unique_actions_used": 1
+            },
+            {
+                "policy_name": "logistics_priority_policy",
+                "policy_group": "Baseline",
+                "split": "valid",
+                "scenario": "normal",
+                "coordinated_action": 0,
+                "rows": 16897,
+                "mean_reward": 7.322978954299529,
+                "total_reward": 123736.37539079916,
+                "std_reward": 0.5957038558950764,
+                "mean_risk": 0.1295564511707595,
+                "mean_delay": 0.0743497013319231,
+                "mean_service": 0.9491305967805936,
+                "mean_resilience": 0.7980167694519162,
+                "mean_cost": 0.4155114167914213,
+                "mean_profit_proxy": 0.8224320488847873,
+                "dominant_action": "accelerated_logistics",
+                "dominant_action_percent": 100.0,
+                "action_entropy": 0.0,
+                "unique_actions_used": 1
+            },
+            {
+                "policy_name": "seller_risk_avoidance_policy",
+                "policy_group": "Baseline",
+                "split": "valid",
+                "scenario": "normal",
+                "coordinated_action": 0,
+                "rows": 16897,
+                "mean_reward": 7.437497001532894,
+                "total_reward": 125671.38683490132,
+                "std_reward": 0.6059755323608996,
+                "mean_risk": 0.0684483677438278,
+                "mean_delay": 0.1411593531037699,
+                "mean_service": 0.9192004559157076,
+                "mean_resilience": 0.8966453581626859,
+                "mean_cost": 0.4217123060123358,
+                "mean_profit_proxy": 0.8200549013950835,
+                "dominant_action": "seller_risk_avoidance",
+                "dominant_action_percent": 100.0,
+                "action_entropy": 0.0,
+                "unique_actions_used": 1
+            },
+            {
+                "policy_name": "service_priority_policy",
+                "policy_group": "Baseline",
+                "split": "valid",
+                "scenario": "normal",
+                "coordinated_action": 0,
+                "rows": 16897,
+                "mean_reward": 7.369251696420737,
+                "total_reward": 124518.2459144212,
+                "std_reward": 0.5618464549953321,
+                "mean_risk": 0.1065368475897162,
+                "mean_delay": 0.159705606947919,
+                "mean_service": 0.9748704727259976,
+                "mean_resilience": 0.8492204860802209,
+                "mean_cost": 0.4255383782604486,
+                "mean_profit_proxy": 0.8577013667847275,
+                "dominant_action": "service_recovery_priority",
+                "dominant_action_percent": 100.0,
+                "action_entropy": 0.0,
+                "unique_actions_used": 1
+            },
+            {
+                "policy_name": "rule_based_policy",
+                "policy_group": "Baseline",
+                "split": "valid",
+                "scenario": "normal",
+                "coordinated_action": 0,
+                "rows": 16897,
+                "mean_reward": 7.157636219779936,
+                "total_reward": 120942.57920562156,
+                "std_reward": 0.5515942287932699,
+                "mean_risk": 0.1231579256792752,
+                "mean_delay": 0.1603922258154387,
+                "mean_service": 0.9476623718527456,
+                "mean_resilience": 0.7911008450287905,
+                "mean_cost": 0.3737868370637982,
+                "mean_profit_proxy": 0.7832923651918022,
+                "dominant_action": "balanced_fulfillment",
+                "dominant_action_percent": 72.01278333431969,
+                "action_entropy": 0.8721690863224514,
+                "unique_actions_used": 5
+            },
+            {
+                "policy_name": "q_table_policy",
+                "policy_group": "Baseline",
+                "split": "valid",
+                "scenario": "normal",
+                "coordinated_action": 0,
+                "rows": 16897,
+                "mean_reward": 7.435862812628848,
+                "total_reward": 125643.77394498965,
+                "std_reward": 0.6082379582495775,
+                "mean_risk": 0.0702598148975853,
+                "mean_delay": 0.141941908736179,
+                "mean_service": 0.922403298275186,
+                "mean_resilience": 0.8954206253602365,
+                "mean_cost": 0.421808149850315,
+                "mean_profit_proxy": 0.8201567303765922,
+                "dominant_action": "seller_risk_avoidance",
+                "dominant_action_percent": 98.19494584837544,
+                "action_entropy": 0.0992836570162689,
+                "unique_actions_used": 4
+            },
+            {
+                "policy_name": "random_policy",
+                "policy_group": "Baseline",
+                "split": "test",
+                "scenario": "normal",
+                "coordinated_action": 0,
+                "rows": 16898,
+                "mean_reward": 7.173705743458916,
+                "total_reward": 121221.27965296876,
+                "std_reward": 0.7436527223697907,
+                "mean_risk": 0.1221188655018774,
+                "mean_delay": 0.1442913574110362,
+                "mean_service": 0.9248667271833976,
+                "mean_resilience": 0.8007454832702388,
+                "mean_cost": 0.389800979579379,
+                "mean_profit_proxy": 0.8105017825920418,
+                "dominant_action": "accelerated_logistics",
+                "dominant_action_percent": 20.36335661024973,
+                "action_entropy": 1.6093362410406955,
+                "unique_actions_used": 5
+            },
+            {
+                "policy_name": "cost_priority_policy",
+                "policy_group": "Baseline",
+                "split": "test",
+                "scenario": "normal",
+                "coordinated_action": 0,
+                "rows": 16898,
+                "mean_reward": 6.540422012786017,
+                "total_reward": 110520.05117205813,
+                "std_reward": 0.9085938206555748,
+                "mean_risk": 0.1790601916802846,
+                "mean_delay": 0.207674362523385,
+                "mean_service": 0.8342516135669132,
+                "mean_resilience": 0.6485009213228605,
+                "mean_cost": 0.2828002391067735,
+                "mean_profit_proxy": 0.7773286667098969,
+                "dominant_action": "cost_priority_fulfillment",
+                "dominant_action_percent": 100.0,
+                "action_entropy": 0.0,
+                "unique_actions_used": 1
+            },
+            {
+                "policy_name": "balanced_policy",
+                "policy_group": "Baseline",
+                "split": "test",
+                "scenario": "normal",
+                "coordinated_action": 0,
+                "rows": 16898,
+                "mean_reward": 7.074713077553879,
+                "total_reward": 119548.50158450544,
+                "std_reward": 0.6936209631653621,
+                "mean_risk": 0.1367004351917811,
+                "mean_delay": 0.1554845731101217,
+                "mean_service": 0.9280747572555508,
+                "mean_resilience": 0.7818758836140915,
+                "mean_cost": 0.3701700268229039,
+                "mean_profit_proxy": 0.7697265452678336,
+                "dominant_action": "balanced_fulfillment",
+                "dominant_action_percent": 100.0,
+                "action_entropy": 0.0,
+                "unique_actions_used": 1
+            },
+            {
+                "policy_name": "logistics_priority_policy",
+                "policy_group": "Baseline",
+                "split": "test",
+                "scenario": "normal",
+                "coordinated_action": 0,
+                "rows": 16898,
+                "mean_reward": 7.362347911301657,
+                "total_reward": 124408.9550051754,
+                "std_reward": 0.5707192453287686,
+                "mean_risk": 0.1253280265755322,
+                "mean_delay": 0.0719667522802645,
+                "mean_service": 0.9551211917939932,
+                "mean_resilience": 0.8094838067296537,
+                "mean_cost": 0.4269178167135153,
+                "mean_profit_proxy": 0.8243738058056485,
+                "dominant_action": "accelerated_logistics",
+                "dominant_action_percent": 100.0,
+                "action_entropy": 0.0,
+                "unique_actions_used": 1
+            },
+            {
+                "policy_name": "seller_risk_avoidance_policy",
+                "policy_group": "Baseline",
+                "split": "test",
+                "scenario": "normal",
+                "coordinated_action": 0,
+                "rows": 16898,
+                "mean_reward": 7.478605240017239,
+                "total_reward": 126373.4713458113,
+                "std_reward": 0.5768813049458363,
+                "mean_risk": 0.0666190680974337,
+                "mean_delay": 0.135731377302558,
+                "mean_service": 0.9280747572555508,
+                "mean_resilience": 0.9057977227560816,
+                "mean_cost": 0.4332720426269232,
+                "mean_profit_proxy": 0.8218429237992173,
+                "dominant_action": "seller_risk_avoidance",
+                "dominant_action_percent": 100.0,
+                "action_entropy": 0.0,
+                "unique_actions_used": 1
+            },
+            {
+                "policy_name": "service_priority_policy",
+                "policy_group": "Baseline",
+                "split": "test",
+                "scenario": "normal",
+                "coordinated_action": 0,
+                "rows": 16898,
+                "mean_reward": 7.40723321144432,
+                "total_reward": 125167.42680698611,
+                "std_reward": 0.5357451538501472,
+                "mean_risk": 0.1031972792786992,
+                "mean_delay": 0.153494177408132,
+                "mean_service": 0.9777947340485124,
+                "mean_resilience": 0.8600189816521504,
+                "mean_cost": 0.4368209552939634,
+                "mean_profit_proxy": 0.860004696266482,
+                "dominant_action": "service_recovery_priority",
+                "dominant_action_percent": 100.0,
+                "action_entropy": 0.0,
+                "unique_actions_used": 1
+            },
+            {
+                "policy_name": "rule_based_policy",
+                "policy_group": "Baseline",
+                "split": "test",
+                "scenario": "normal",
+                "coordinated_action": 0,
+                "rows": 16898,
+                "mean_reward": 7.180738484550876,
+                "total_reward": 121340.11891194068,
+                "std_reward": 0.5321394892309994,
+                "mean_risk": 0.1225044507613846,
+                "mean_delay": 0.1554646641679149,
+                "mean_service": 0.9519640590088366,
+                "mean_resilience": 0.7959604055296075,
+                "mean_cost": 0.3794134650010649,
+                "mean_profit_proxy": 0.7817932237762182,
+                "dominant_action": "balanced_fulfillment",
+                "dominant_action_percent": 77.04462066516747,
+                "action_entropy": 0.7709841705303496,
+                "unique_actions_used": 5
+            },
+            {
+                "policy_name": "q_table_policy",
+                "policy_group": "Baseline",
+                "split": "test",
+                "scenario": "normal",
+                "coordinated_action": 0,
+                "rows": 16898,
+                "mean_reward": 7.47861161498946,
+                "total_reward": 126373.5790700919,
+                "std_reward": 0.5780106568072174,
+                "mean_risk": 0.0680118295732461,
+                "mean_delay": 0.13621495982851,
+                "mean_service": 0.9308945942029012,
+                "mean_resilience": 0.9050882465040812,
+                "mean_cost": 0.4334486969564085,
+                "mean_profit_proxy": 0.8219533023625818,
+                "dominant_action": "seller_risk_avoidance",
+                "dominant_action_percent": 98.64481003669071,
+                "action_entropy": 0.0745347568199584,
+                "unique_actions_used": 3
+            },
+            {
+                "policy_name": "sthg_cmappo_pareto_policy",
+                "policy_group": "Proposed-CMARL",
+                "split": "train",
+                "scenario": "normal",
+                "coordinated_action": 1,
+                "rows": 78855,
+                "mean_reward": 8.213992633421324,
+                "total_reward": 647714.3891084385,
+                "std_reward": 0.6143893943371604,
+                "mean_risk": 0.0804072822071196,
+                "mean_delay": 0.1137646175813448,
+                "mean_service": 0.9709732009094548,
+                "mean_resilience": 0.953690742573832,
+                "mean_cost": 0.4100507361502703,
+                "mean_profit_proxy": 0.8537139272368771,
+                "dominant_action": "seller_risk_avoidance",
+                "dominant_action_percent": 50.62075962209119,
+                "action_entropy": 1.224743795696236,
+                "unique_actions_used": 4
+            },
+            {
+                "policy_name": "sthg_cmappo_adaptive_hybrid_policy",
+                "policy_group": "Proposed-CMARL",
+                "split": "train",
+                "scenario": "normal",
+                "coordinated_action": 1,
+                "rows": 78855,
+                "mean_reward": 8.244325252708386,
+                "total_reward": 650106.2678023197,
+                "std_reward": 0.6160961775132958,
+                "mean_risk": 0.0686900593359901,
+                "mean_delay": 0.116523161646229,
+                "mean_service": 0.9639828319706776,
+                "mean_resilience": 0.963838450119341,
+                "mean_cost": 0.4165115811572779,
+                "mean_profit_proxy": 0.8608938520566081,
+                "dominant_action": "seller_risk_avoidance",
+                "dominant_action_percent": 66.00215585568449,
+                "action_entropy": 0.9198680942891492,
+                "unique_actions_used": 4
+            },
+            {
+                "policy_name": "sthg_cmappo_risk_service_policy",
+                "policy_group": "Proposed-CMARL",
+                "split": "train",
+                "scenario": "normal",
+                "coordinated_action": 1,
+                "rows": 78855,
+                "mean_reward": 8.245935301197509,
+                "total_reward": 650233.2281759295,
+                "std_reward": 0.6169670890793013,
+                "mean_risk": 0.0680169005390281,
+                "mean_delay": 0.1180508120739402,
+                "mean_service": 0.9651095458431233,
+                "mean_resilience": 0.9641255408767038,
+                "mean_cost": 0.4171140369241122,
+                "mean_profit_proxy": 0.8616467196310672,
+                "dominant_action": "seller_risk_avoidance",
+                "dominant_action_percent": 67.66216473273731,
+                "action_entropy": 0.8724837241030553,
+                "unique_actions_used": 4
+            },
+            {
+                "policy_name": "sthg_cmappo_cost_resilient_policy",
+                "policy_group": "Proposed-CMARL",
+                "split": "train",
+                "scenario": "normal",
+                "coordinated_action": 1,
+                "rows": 78855,
+                "mean_reward": 8.246109085753774,
+                "total_reward": 650246.9319571139,
+                "std_reward": 0.6158010761708291,
+                "mean_risk": 0.0662811819293222,
+                "mean_delay": 0.1183302110418814,
+                "mean_service": 0.9621413017575194,
+                "mean_resilience": 0.9653573758986284,
+                "mean_cost": 0.4167554079785408,
+                "mean_profit_proxy": 0.8615293115927958,
+                "dominant_action": "seller_risk_avoidance",
+                "dominant_action_percent": 69.09771098852325,
+                "action_entropy": 0.860902017440015,
+                "unique_actions_used": 4
+            },
+            {
+                "policy_name": "sthg_cmappo_pareto_policy",
+                "policy_group": "Proposed-CMARL",
+                "split": "valid",
+                "scenario": "normal",
+                "coordinated_action": 1,
+                "rows": 16897,
+                "mean_reward": 8.265950754222974,
+                "total_reward": 139669.7698941056,
+                "std_reward": 0.5120510061465847,
+                "mean_risk": 0.0703429918518537,
+                "mean_delay": 0.1130696584694168,
+                "mean_service": 0.979383231557434,
+                "mean_resilience": 0.947800753683653,
+                "mean_cost": 0.403817517745632,
+                "mean_profit_proxy": 0.8632822093372009,
+                "dominant_action": "seller_risk_avoidance",
+                "dominant_action_percent": 61.82754335089069,
+                "action_entropy": 1.061657830039757,
+                "unique_actions_used": 4
+            },
+            {
+                "policy_name": "sthg_cmappo_adaptive_hybrid_policy",
+                "policy_group": "Proposed-CMARL",
+                "split": "valid",
+                "scenario": "normal",
+                "coordinated_action": 1,
+                "rows": 16897,
+                "mean_reward": 8.287897627259104,
+                "total_reward": 140040.60620779707,
+                "std_reward": 0.510274331684078,
+                "mean_risk": 0.0605059820064938,
+                "mean_delay": 0.1194766267001704,
+                "mean_service": 0.9752861332528974,
+                "mean_resilience": 0.9572019417896844,
+                "mean_cost": 0.4078373884063397,
+                "mean_profit_proxy": 0.8678227420652807,
+                "dominant_action": "seller_risk_avoidance",
+                "dominant_action_percent": 75.0073977629165,
+                "action_entropy": 0.761858791194194,
+                "unique_actions_used": 4
+            },
+            {
+                "policy_name": "sthg_cmappo_risk_service_policy",
+                "policy_group": "Proposed-CMARL",
+                "split": "valid",
+                "scenario": "normal",
+                "coordinated_action": 1,
+                "rows": 16897,
+                "mean_reward": 8.289133067852976,
+                "total_reward": 140061.48144751173,
+                "std_reward": 0.5105842070107587,
+                "mean_risk": 0.0596864524186941,
+                "mean_delay": 0.1207511006006758,
+                "mean_service": 0.975762822161803,
+                "mean_resilience": 0.9575394851313732,
+                "mean_cost": 0.4082514277696452,
+                "mean_profit_proxy": 0.8683735409979709,
+                "dominant_action": "seller_risk_avoidance",
+                "dominant_action_percent": 76.55205065988045,
+                "action_entropy": 0.7150477736350354,
+                "unique_actions_used": 4
+            },
+            {
+                "policy_name": "sthg_cmappo_cost_resilient_policy",
+                "policy_group": "Proposed-CMARL",
+                "split": "valid",
+                "scenario": "normal",
+                "coordinated_action": 1,
+                "rows": 16897,
+                "mean_reward": 8.289310584561152,
+                "total_reward": 140064.48094732978,
+                "std_reward": 0.5098649913106658,
+                "mean_risk": 0.058532948349158,
+                "mean_delay": 0.1214398046517373,
+                "mean_service": 0.9741560256017816,
+                "mean_resilience": 0.958568108148266,
+                "mean_cost": 0.4080517527823221,
+                "mean_profit_proxy": 0.8683021183297787,
+                "dominant_action": "seller_risk_avoidance",
+                "dominant_action_percent": 77.68834704385394,
+                "action_entropy": 0.6993295412168288,
+                "unique_actions_used": 4
+            },
+            {
+                "policy_name": "sthg_cmappo_pareto_policy",
+                "policy_group": "Proposed-CMARL",
+                "split": "test",
+                "scenario": "normal",
+                "coordinated_action": 1,
+                "rows": 16898,
+                "mean_reward": 8.28395912590785,
+                "total_reward": 139982.34130959085,
+                "std_reward": 0.4874800982680451,
+                "mean_risk": 0.069992737650334,
+                "mean_delay": 0.1073435116950867,
+                "mean_service": 0.982559709834678,
+                "mean_resilience": 0.9529697245835737,
+                "mean_cost": 0.4135952072248559,
+                "mean_profit_proxy": 0.863043872281342,
+                "dominant_action": "seller_risk_avoidance",
+                "dominant_action_percent": 59.7940584684578,
+                "action_entropy": 1.097608295951075,
+                "unique_actions_used": 4
+            },
+            {
+                "policy_name": "sthg_cmappo_adaptive_hybrid_policy",
+                "policy_group": "Proposed-CMARL",
+                "split": "test",
+                "scenario": "normal",
+                "coordinated_action": 1,
+                "rows": 16898,
+                "mean_reward": 8.308950184780423,
+                "total_reward": 140404.64022241958,
+                "std_reward": 0.4846679135162108,
+                "mean_risk": 0.0598028949757719,
+                "mean_delay": 0.113056853017106,
+                "mean_service": 0.97876189658869,
+                "mean_resilience": 0.9624110673176032,
+                "mean_cost": 0.418622958611635,
+                "mean_profit_proxy": 0.8684094952142591,
+                "dominant_action": "seller_risk_avoidance",
+                "dominant_action_percent": 73.81346904959166,
+                "action_entropy": 0.7935128242416001,
+                "unique_actions_used": 4
+            },
+            {
+                "policy_name": "sthg_cmappo_risk_service_policy",
+                "policy_group": "Proposed-CMARL",
+                "split": "test",
+                "scenario": "normal",
+                "coordinated_action": 1,
+                "rows": 16898,
+                "mean_reward": 8.310615301487664,
+                "total_reward": 140432.77736453855,
+                "std_reward": 0.4849774091322734,
+                "mean_risk": 0.0586928037644848,
+                "mean_delay": 0.1146509879957679,
+                "mean_service": 0.9791610497984128,
+                "mean_resilience": 0.9629997906323468,
+                "mean_cost": 0.4191136730337947,
+                "mean_profit_proxy": 0.8690766299840641,
+                "dominant_action": "seller_risk_avoidance",
+                "dominant_action_percent": 75.81962362409753,
+                "action_entropy": 0.7386385654340708,
+                "unique_actions_used": 4
+            },
+            {
+                "policy_name": "sthg_cmappo_cost_resilient_policy",
+                "policy_group": "Proposed-CMARL",
+                "split": "test",
+                "scenario": "normal",
+                "coordinated_action": 1,
+                "rows": 16898,
+                "mean_reward": 8.31062975777175,
+                "total_reward": 140433.02164682702,
+                "std_reward": 0.4842266858552483,
+                "mean_risk": 0.0578498959281822,
+                "mean_delay": 0.1151118402348581,
+                "mean_service": 0.9779152876386152,
+                "mean_resilience": 0.9637393008682608,
+                "mean_cost": 0.4189049655007131,
+                "mean_profit_proxy": 0.868936236921516,
+                "dominant_action": "seller_risk_avoidance",
+                "dominant_action_percent": 76.59486329743164,
+                "action_entropy": 0.7319356151105708,
+                "unique_actions_used": 4
+            }
+        ],
+        "stress_rows": [
+            {
+                "scenario": "normal",
+                "baseline_policy": "seller_risk_avoidance_policy",
+                "proposed_policy": "sthg_cmappo_cost_resilient_policy",
+                "baseline_reward": 7.478605240017239,
+                "proposed_reward": 8.31062975777175,
+                "reward_improvement_percent": 11.125396929663223,
+                "baseline_risk": 0.0666190680974337,
+                "proposed_risk": 0.0578498959281822,
+                "risk_reduction_percent": 13.1631564650921,
+                "baseline_delay": 0.135731377302558,
+                "proposed_delay": 0.1151118402348581,
+                "delay_reduction_percent": 15.191429923927558,
+                "baseline_service": 0.9280747572555508,
+                "proposed_service": 0.9779152876386152,
+                "service_improvement_percent": 5.370314190038958,
+                "baseline_resilience": 0.9057977227560816,
+                "proposed_resilience": 0.9637393008682608,
+                "resilience_improvement_percent": 6.396745835911314,
+                "baseline_unique_actions": 1,
+                "proposed_unique_actions": 4
+            },
+            {
+                "scenario": "demand_surge",
+                "baseline_policy": "seller_risk_avoidance_policy",
+                "proposed_policy": "sthg_cmappo_cost_resilient_policy",
+                "baseline_reward": 6.991282186543818,
+                "proposed_reward": 7.875815288049132,
+                "reward_improvement_percent": 12.651943919640138,
+                "baseline_risk": 0.0953558130493303,
+                "proposed_risk": 0.0755577282640055,
+                "risk_reduction_percent": 20.76232602104985,
+                "baseline_delay": 0.2311155563622856,
+                "proposed_delay": 0.2017280508551453,
+                "delay_reduction_percent": 12.715503001915597,
+                "baseline_service": 0.9101850330809084,
+                "proposed_service": 0.9614592798991678,
+                "service_improvement_percent": 5.633387163563866,
+                "baseline_resilience": 0.8545530750361807,
+                "proposed_resilience": 0.9293593784463604,
+                "resilience_improvement_percent": 8.753851059164768,
+                "baseline_unique_actions": 1,
+                "proposed_unique_actions": 3
+            },
+            {
+                "scenario": "logistics_disruption",
+                "baseline_policy": "seller_risk_avoidance_policy",
+                "proposed_policy": "sthg_cmappo_cost_resilient_policy",
+                "baseline_reward": 6.736707930139877,
+                "proposed_reward": 7.655700344205499,
+                "reward_improvement_percent": 13.64156534015778,
+                "baseline_risk": 0.1055899704175079,
+                "proposed_risk": 0.0935916503248042,
+                "risk_reduction_percent": 11.363124779050349,
+                "baseline_delay": 0.3023366604895443,
+                "proposed_delay": 0.2444077224946333,
+                "delay_reduction_percent": 19.16040810304389,
+                "baseline_service": 0.8924206847086726,
+                "proposed_service": 0.956314920392334,
+                "service_improvement_percent": 7.159654272751342,
+                "baseline_resilience": 0.8551788637592039,
+                "proposed_resilience": 0.921922328216435,
+                "resilience_improvement_percent": 7.804620446749527,
+                "baseline_unique_actions": 1,
+                "proposed_unique_actions": 3
+            },
+            {
+                "scenario": "seller_shock",
+                "baseline_policy": "seller_risk_avoidance_policy",
+                "proposed_policy": "sthg_cmappo_cost_resilient_policy",
+                "baseline_reward": 6.814586418175624,
+                "proposed_reward": 7.765876674912016,
+                "reward_improvement_percent": 13.959618359217584,
+                "baseline_risk": 0.1389179933688256,
+                "proposed_risk": 0.0986671755134629,
+                "risk_reduction_percent": 28.97451718043267,
+                "baseline_delay": 0.2168261047786321,
+                "proposed_delay": 0.1954011850264868,
+                "delay_reduction_percent": 9.88115327442653,
+                "baseline_service": 0.8787817147229403,
+                "proposed_service": 0.9431202847435012,
+                "service_improvement_percent": 7.321336907976669,
+                "baseline_resilience": 0.8422127653558917,
+                "proposed_resilience": 0.9243175201105872,
+                "resilience_improvement_percent": 9.748695119813435,
+                "baseline_unique_actions": 1,
+                "proposed_unique_actions": 3
+            },
+            {
+                "scenario": "service_shock",
+                "baseline_policy": "seller_risk_avoidance_policy",
+                "proposed_policy": "sthg_cmappo_cost_resilient_policy",
+                "baseline_reward": 6.7498633219837,
+                "proposed_reward": 7.747204158235422,
+                "reward_improvement_percent": 14.77571898387146,
+                "baseline_risk": 0.0999409746232725,
+                "proposed_risk": 0.1039985476551919,
+                "risk_reduction_percent": -4.059969444178796,
+                "baseline_delay": 0.1842165066335553,
+                "proposed_delay": 0.1682889277450571,
+                "delay_reduction_percent": 8.64611927539233,
+                "baseline_service": 0.7341764389824991,
+                "proposed_service": 0.9036282426927787,
+                "service_improvement_percent": 23.08052870031137,
+                "baseline_resilience": 0.8740496101488009,
+                "proposed_resilience": 0.9285362049753824,
+                "resilience_improvement_percent": 6.233810323112597,
+                "baseline_unique_actions": 1,
+                "proposed_unique_actions": 3
+            },
+            {
+                "scenario": "combined_stress",
+                "baseline_policy": "seller_risk_avoidance_policy",
+                "proposed_policy": "sthg_cmappo_cost_resilient_policy",
+                "baseline_reward": 6.102085016190779,
+                "proposed_reward": 7.109377059060463,
+                "reward_improvement_percent": 16.50734200190617,
+                "baseline_risk": 0.1535587568170918,
+                "proposed_risk": 0.1238488907638271,
+                "risk_reduction_percent": 19.34755572985849,
+                "baseline_delay": 0.343782478640987,
+                "proposed_delay": 0.2860932419213359,
+                "delay_reduction_percent": 16.780737909536125,
+                "baseline_service": 0.7767982737615461,
+                "proposed_service": 0.8664620707417466,
+                "service_improvement_percent": 11.542738959242932,
+                "baseline_resilience": 0.7953473311824013,
+                "proposed_resilience": 0.873798803606194,
+                "resilience_improvement_percent": 9.86380029806135,
+                "baseline_unique_actions": 1,
+                "proposed_unique_actions": 3
+            }
+        ],
+        "lock_rows": [
+            {
+                "component": "Step 18 graph-risk feature dataset",
+                "criterion": "Rows, graph features and missing values",
+                "actual_result": "112,650 rows \u00d7 229 columns; missing=0",
+                "status": "LOCKED",
+                "source": "Step 18 actual graph-risk feature file"
+            },
+            {
+                "component": "Step 20 digital twin dataset",
+                "criterion": "Rows, state features and missing values",
+                "actual_result": "112,650 rows \u00d7 43 columns; missing=0",
+                "status": "LOCKED",
+                "source": "Step 20 actual digital-twin file"
+            },
+            {
+                "component": "Step 19 ML proposed model",
+                "criterion": "Best actual test model",
+                "actual_result": "CatBoost | Proposed-RGC-Optimized | accuracy=0.973192, macro_f1=0.973880",
+                "status": "LOCKED",
+                "source": "Step 19 actual test ranking"
+            },
+            {
+                "component": "Step 20 policy improvement",
+                "criterion": "mean_reward target >= 5.00%",
+                "actual_result": "11.125397%",
+                "status": "LOCKED",
+                "source": "Step 20 actual policy improvement table"
+            },
+            {
+                "component": "Step 20 policy improvement",
+                "criterion": "mean_risk target >= 3.00%",
+                "actual_result": "13.163156%",
+                "status": "LOCKED",
+                "source": "Step 20 actual policy improvement table"
+            },
+            {
+                "component": "Step 20 policy improvement",
+                "criterion": "mean_delay target >= 3.00%",
+                "actual_result": "15.191430%",
+                "status": "LOCKED",
+                "source": "Step 20 actual policy improvement table"
+            },
+            {
+                "component": "Step 20 policy improvement",
+                "criterion": "mean_service target >= 3.00%",
+                "actual_result": "5.370314%",
+                "status": "LOCKED",
+                "source": "Step 20 actual policy improvement table"
+            },
+            {
+                "component": "Step 20 policy improvement",
+                "criterion": "mean_resilience target >= 3.00%",
+                "actual_result": "6.396746%",
+                "status": "LOCKED",
+                "source": "Step 20 actual policy improvement table"
+            },
+            {
+                "component": "Step 20 strength check",
+                "criterion": "All targets pass",
+                "actual_result": "100.00% checks passed",
+                "status": "LOCKED",
+                "source": "Step 20 actual strength check table"
+            },
+            {
+                "component": "Step 20 stress robustness",
+                "criterion": "Positive reward improvement across stress scenarios",
+                "actual_result": "mean=13.776931%, positive_rate=100.00%",
+                "status": "LOCKED",
+                "source": "Step 20 actual stress summary"
+            }
+        ]
+    },
+    "dataset1_discovered_files": [
+        {
+            "file": "outputs\\tables\\02_categorical_summary.csv",
+            "rows": 24,
+            "columns": 3
+        },
+        {
+            "file": "outputs\\tables\\02_dtype_column_report.csv",
+            "rows": 53,
+            "columns": 4
+        },
+        {
+            "file": "outputs\\tables\\02_expected_dataco_columns_report.csv",
+            "rows": 16,
+            "columns": 3
+        },
+        {
+            "file": "outputs\\tables\\02_missing_values_report.csv",
+            "rows": 53,
+            "columns": 5
+        },
+        {
+            "file": "outputs\\tables\\02_numeric_summary.csv",
+            "rows": 29,
+            "columns": 9
+        },
+        {
+            "file": "outputs\\tables\\03_column_role_report.csv",
+            "rows": 56,
+            "columns": 5
+        },
+        {
+            "file": "outputs\\tables\\03_date_parse_report.csv",
+            "rows": 2,
+            "columns": 5
+        },
+        {
+            "file": "outputs\\tables\\03_missing_fill_report.csv",
+            "rows": 1,
+            "columns": 4
+        },
+        {
+            "file": "outputs\\tables\\03_removed_columns_report.csv",
+            "rows": 8,
+            "columns": 4
+        },
+        {
+            "file": "outputs\\tables\\04_engineered_feature_summary.csv",
+            "rows": 22,
+            "columns": 6
+        },
+        {
+            "file": "outputs\\tables\\04_risk_label_distribution.csv",
+            "rows": 3,
+            "columns": 3
+        },
+        {
+            "file": "outputs\\tables\\04_risk_score_weights_thresholds.csv",
+            "rows": 9,
+            "columns": 5
+        },
+        {
+            "file": "outputs\\tables\\05_graph_edge_relation_summary.csv",
+            "rows": 8,
+            "columns": 7
+        },
+        {
+            "file": "outputs\\tables\\05_graph_node_type_summary.csv",
+            "rows": 7,
+            "columns": 6
+        },
+        {
+            "file": "outputs\\tables\\05_top_risk_nodes.csv",
+            "rows": 50,
+            "columns": 14
+        },
+        {
+            "file": "outputs\\tables\\06_baseline_feature_list.csv",
+            "rows": 44,
+            "columns": 3
+        },
+        {
+            "file": "outputs\\tables\\06_baseline_model_metrics.csv",
+            "rows": 9,
+            "columns": 9
+        },
+        {
+            "file": "outputs\\tables\\06_baseline_predictions.csv",
+            "rows": 541557,
+            "columns": 7
+        },
+        {
+            "file": "outputs\\tables\\06_best_baseline_model.csv",
+            "rows": 1,
+            "columns": 9
+        },
+        {
+            "file": "outputs\\tables\\07_advanced_baseline_vs_proposed_rgc_improvement.csv",
+            "rows": 3,
+            "columns": 18
+        },
+        {
+            "file": "outputs\\tables\\07_advanced_best_proposed_rgc_model.csv",
+            "rows": 1,
+            "columns": 9
+        },
+        {
+            "file": "outputs\\tables\\07_advanced_compact_rgc_feature_list.csv",
+            "rows": 85,
+            "columns": 4
+        },
+        {
+            "file": "outputs\\tables\\07_advanced_proposed_rgc_model_metrics.csv",
+            "rows": 9,
+            "columns": 9
+        },
+        {
+            "file": "outputs\\tables\\07_advanced_proposed_rgc_predictions.csv",
+            "rows": 541557,
+            "columns": 8
+        },
+        {
+            "file": "outputs\\tables\\07_advanced_rgc_fusion_alpha_search.csv",
+            "rows": 30,
+            "columns": 5
+        },
+        {
+            "file": "outputs\\tables\\07_baseline_vs_proposed_rgc_improvement.csv",
+            "rows": 3,
+            "columns": 18
+        },
+        {
+            "file": "outputs\\tables\\07_best_proposed_rgc_model.csv",
+            "rows": 1,
+            "columns": 9
+        },
+        {
+            "file": "outputs\\tables\\07_compact_train_safe_graph_edge_relation_summary.csv",
+            "rows": 8,
+            "columns": 7
+        },
+        {
+            "file": "outputs\\tables\\07_compact_train_safe_graph_node_type_summary.csv",
+            "rows": 7,
+            "columns": 6
+        },
+        {
+            "file": "outputs\\tables\\07_compact_train_safe_top_risk_nodes.csv",
+            "rows": 50,
+            "columns": 14
+        },
+        {
+            "file": "outputs\\tables\\07_final_baseline_vs_proposed_rgc_improvement.csv",
+            "rows": 3,
+            "columns": 21
+        },
+        {
+            "file": "outputs\\tables\\07_final_best_proposed_rgc_model.csv",
+            "rows": 1,
+            "columns": 9
+        },
+        {
+            "file": "outputs\\tables\\07_final_candidate_selection_summary.csv",
+            "rows": 9,
+            "columns": 10
+        },
+        {
+            "file": "outputs\\tables\\07_final_fusion_alpha_class_weight_search.csv",
+            "rows": 23328,
+            "columns": 9
+        },
+        {
+            "file": "outputs\\tables\\07_final_proposed_rgc_model_metrics.csv",
+            "rows": 9,
+            "columns": 9
+        },
+        {
+            "file": "outputs\\tables\\07_final_proposed_rgc_predictions.csv",
+            "rows": 541557,
+            "columns": 10
+        },
+        {
+            "file": "outputs\\tables\\07_final_rgc_candidate_feature_sets.csv",
+            "rows": 244,
+            "columns": 4
+        },
+        {
+            "file": "outputs\\tables\\07_final_train_safe_graph_edge_relation_summary.csv",
+            "rows": 8,
+            "columns": 7
+        },
+        {
+            "file": "outputs\\tables\\07_final_train_safe_graph_node_type_summary.csv",
+            "rows": 7,
+            "columns": 6
+        },
+        {
+            "file": "outputs\\tables\\07_final_train_safe_top_risk_nodes.csv",
+            "rows": 50,
+            "columns": 14
+        },
+        {
+            "file": "outputs\\tables\\07_leakage_safe_baseline_vs_proposed_rgc_improvement.csv",
+            "rows": 3,
+            "columns": 20
+        },
+        {
+            "file": "outputs\\tables\\07_leakage_safe_best_proposed_rgc_model.csv",
+            "rows": 1,
+            "columns": 9
+        },
+        {
+            "file": "outputs\\tables\\07_leakage_safe_candidate_feature_audit.csv",
+            "rows": 3,
+            "columns": 5
+        },
+        {
+            "file": "outputs\\tables\\07_leakage_safe_candidate_feature_sets.csv",
+            "rows": 283,
+            "columns": 5
+        },
+        {
+            "file": "outputs\\tables\\07_leakage_safe_candidate_selection_summary.csv",
+            "rows": 9,
+            "columns": 14
+        },
+        {
+            "file": "outputs\\tables\\07_leakage_safe_fusion_alpha_class_weight_search.csv",
+            "rows": 21384,
+            "columns": 10
+        },
+        {
+            "file": "outputs\\tables\\07_leakage_safe_graph_edge_relation_summary.csv",
+            "rows": 8,
+            "columns": 7
+        },
+        {
+            "file": "outputs\\tables\\07_leakage_safe_graph_node_type_summary.csv",
+            "rows": 7,
+            "columns": 6
+        },
+        {
+            "file": "outputs\\tables\\07_leakage_safe_proposed_rgc_model_metrics.csv",
+            "rows": 9,
+            "columns": 9
+        },
+        {
+            "file": "outputs\\tables\\07_leakage_safe_proposed_rgc_predictions.csv",
+            "rows": 541557,
+            "columns": 11
+        },
+        {
+            "file": "outputs\\tables\\07_leakage_safe_top_risk_nodes.csv",
+            "rows": 50,
+            "columns": 14
+        },
+        {
+            "file": "outputs\\tables\\07_proposed_rgc_feature_list.csv",
+            "rows": 101,
+            "columns": 4
+        },
+        {
+            "file": "outputs\\tables\\07_proposed_rgc_model_metrics.csv",
+            "rows": 9,
+            "columns": 9
+        },
+        {
+            "file": "outputs\\tables\\07_proposed_rgc_predictions.csv",
+            "rows": 541557,
+            "columns": 7
+        },
+        {
+            "file": "outputs\\tables\\07_train_safe_graph_edge_relation_summary.csv",
+            "rows": 8,
+            "columns": 7
+        },
+        {
+            "file": "outputs\\tables\\07_train_safe_graph_node_type_summary.csv",
+            "rows": 7,
+            "columns": 6
+        },
+        {
+            "file": "outputs\\tables\\07_train_safe_top_risk_nodes.csv",
+            "rows": 50,
+            "columns": 14
+        },
+        {
+            "file": "outputs\\tables\\08_counterfactual_transition_summary_normal.csv",
+            "rows": 15,
+            "columns": 13
+        },
+        {
+            "file": "outputs\\tables\\08_digital_twin_action_space.csv",
+            "rows": 5,
+            "columns": 9
+        },
+        {
+            "file": "outputs\\tables\\08_digital_twin_scenario_config.csv",
+            "rows": 5,
+            "columns": 7
+        },
+        {
+            "file": "outputs\\tables\\08_digital_twin_split_summary.csv",
+            "rows": 3,
+            "columns": 10
+        },
+        {
+            "file": "outputs\\tables\\08_digital_twin_state_features.csv",
+            "rows": 12,
+            "columns": 3
+        },
+        {
+            "file": "outputs\\tables\\08_environment_rollout_validation.csv",
+            "rows": 9,
+            "columns": 10
+        },
+        {
+            "file": "outputs\\tables\\08_stress_scenario_transition_summary.csv",
+            "rows": 25,
+            "columns": 13
+        },
+        {
+            "file": "outputs\\tables\\09_baseline_policy_evaluation.csv",
+            "rows": 1444152,
+            "columns": 13
+        },
+        {
+            "file": "outputs\\tables\\09_baseline_policy_summary.csv",
+            "rows": 24,
+            "columns": 13
+        },
+        {
+            "file": "outputs\\tables\\09_baseline_q_learning_policy_table.csv",
+            "rows": 2152,
+            "columns": 8
+        },
+        {
+            "file": "outputs\\tables\\09_baseline_stress_scenario_evaluation.csv",
+            "rows": 40,
+            "columns": 13
+        },
+        {
+            "file": "outputs\\tables\\09_best_baseline_policy.csv",
+            "rows": 1,
+            "columns": 13
+        },
+        {
+            "file": "outputs\\tables\\09_q_learning_training_log.csv",
+            "rows": 25,
+            "columns": 6
+        },
+        {
+            "file": "outputs\\tables\\10_baseline_vs_proposed_cmarl_improvement.csv",
+            "rows": 1,
+            "columns": 30
+        },
+        {
+            "file": "outputs\\tables\\10_best_proposed_cmarl_policy.csv",
+            "rows": 1,
+            "columns": 13
+        },
+        {
+            "file": "outputs\\tables\\10_proposed_cmarl_action_distribution.csv",
+            "rows": 21,
+            "columns": 7
+        },
+        {
+            "file": "outputs\\tables\\10_proposed_cmarl_policy_evaluation.csv",
+            "rows": 722076,
+            "columns": 17
+        },
+        {
+            "file": "outputs\\tables\\10_proposed_cmarl_policy_summary.csv",
+            "rows": 12,
+            "columns": 13
+        },
+        {
+            "file": "outputs\\tables\\10_proposed_cmarl_stress_scenario_evaluation.csv",
+            "rows": 20,
+            "columns": 13
+        },
+        {
+            "file": "outputs\\tables\\11_final_master_performance_summary.csv",
+            "rows": 2,
+            "columns": 16
+        },
+        {
+            "file": "outputs\\tables\\11_final_ml_baseline_vs_proposed_summary.csv",
+            "rows": 3,
+            "columns": 22
+        },
+        {
+            "file": "outputs\\tables\\11_final_output_artifact_index.csv",
+            "rows": 12,
+            "columns": 4
+        },
+        {
+            "file": "outputs\\tables\\11_final_rl_baseline_vs_proposed_summary.csv",
+            "rows": 2,
+            "columns": 19
+        },
+        {
+            "file": "outputs\\tables\\11_key_findings_for_manuscript.csv",
+            "rows": 5,
+            "columns": 3
+        },
+        {
+            "file": "outputs\\tables\\12_cmarl_policy_ablation_summary.csv",
+            "rows": 4,
+            "columns": 20
+        },
+        {
+            "file": "outputs\\tables\\12_key_ablation_findings.csv",
+            "rows": 4,
+            "columns": 3
+        },
+        {
+            "file": "outputs\\tables\\12_master_ablation_summary.csv",
+            "rows": 3,
+            "columns": 7
+        },
+        {
+            "file": "outputs\\tables\\12_ml_rgc_feature_ablation_summary.csv",
+            "rows": 9,
+            "columns": 16
+        },
+        {
+            "file": "outputs\\tables\\12_stress_scenario_ablation_summary.csv",
+            "rows": 5,
+            "columns": 19
+        },
+        {
+            "file": "outputs\\tables\\13_extended_stress_testing_summary.csv",
+            "rows": 13,
+            "columns": 28
+        },
+        {
+            "file": "outputs\\tables\\13_key_stress_testing_findings.csv",
+            "rows": 6,
+            "columns": 3
+        },
+        {
+            "file": "outputs\\tables\\13_stress_resilience_scorecard.csv",
+            "rows": 13,
+            "columns": 11
+        },
+        {
+            "file": "outputs\\tables\\13_stress_scenario_ranking.csv",
+            "rows": 13,
+            "columns": 9
+        },
+        {
+            "file": "outputs\\tables\\14_key_explainability_findings.csv",
+            "rows": 6,
+            "columns": 3
+        },
+        {
+            "file": "outputs\\tables\\14_local_decision_explanations.csv",
+            "rows": 23,
+            "columns": 17
+        },
+        {
+            "file": "outputs\\tables\\14_ml_ablation_explainability_summary.csv",
+            "rows": 3,
+            "columns": 9
+        },
+        {
+            "file": "outputs\\tables\\14_ml_feature_explainability_ranking.csv",
+            "rows": 113,
+            "columns": 12
+        },
+        {
+            "file": "outputs\\tables\\14_policy_driver_binned_effects.csv",
+            "rows": 20,
+            "columns": 11
+        },
+        {
+            "file": "outputs\\tables\\14_policy_driver_decision_detail.csv",
+            "rows": 27078,
+            "columns": 33
+        },
+        {
+            "file": "outputs\\tables\\14_policy_driver_explainability_summary.csv",
+            "rows": 77,
+            "columns": 5
+        },
+        {
+            "file": "outputs\\tables\\14_stress_explainability_summary.csv",
+            "rows": 5,
+            "columns": 12
+        },
+        {
+            "file": "data\\processed\\03_dataco_cleaned.csv",
+            "rows": 180519,
+            "columns": 56
+        },
+        {
+            "file": "data\\processed\\04_dataco_features_risk_labels.csv",
+            "rows": 180519,
+            "columns": 79
+        },
+        {
+            "file": "data\\processed\\05_dataco_graph_risk_features.csv",
+            "rows": 180519,
+            "columns": 135
+        },
+        {
+            "file": "data\\processed\\07_dataco_advanced_rgc_features.csv",
+            "rows": 180519,
+            "columns": 195
+        },
+        {
+            "file": "data\\processed\\07_dataco_compact_train_safe_rgc_features.csv",
+            "rows": 180519,
+            "columns": 156
+        },
+        {
+            "file": "data\\processed\\07_dataco_leakage_safe_rgc_features.csv",
+            "rows": 180519,
+            "columns": 198
+        },
+        {
+            "file": "data\\processed\\07_dataco_train_safe_rgc_features.csv",
+            "rows": 180519,
+            "columns": 148
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+﻿table_name,column_name,dtype,non_null_count,missing_count,unique_values,sample_values
+customers,customer_id,object,99441,0,99441,06b8999e2fba1a1fbc88172c00ba8bc7 | 18955e83d337fd6b2def6b18a428ac77 | 4e7b3e00288586ebd08712fdd0374a03 | b2b6027bc5c5109e529d4dc6358b12c3 | 4f2d8ab171c80ec8364f7c12e35b23ad
+customers,customer_unique_id,object,99441,0,96096,861eff4711a542e4b93843c6dd7febb0 | 290c77bc529b7ac935b93aa66c333dc3 | 060e732b5b29e8181a18229c7b0b2b5e | 259dac757896d24d7702b9acbbff3f3c | 345ecd01c38d18a9036ed96c73b8d066
+customers,customer_zip_code_prefix,int64,99441,0,14994,14409 | 9790 | 1151 | 8775 | 13056
+customers,customer_city,object,99441,0,4119,franca | sao bernardo do campo | sao paulo | mogi das cruzes | campinas
+customers,customer_state,object,99441,0,27,SP | SP | SP | SP | SP
+geolocation,geolocation_zip_code_prefix,int64,1000163,0,19015,1037 | 1046 | 1046 | 1041 | 1035
+geolocation,geolocation_lat,float64,1000163,0,717360,-23.54562128115268 | -23.54608112703553 | -23.54612896641469 | -23.5443921648681 | -23.541577961711493
+geolocation,geolocation_lng,float64,1000163,0,717613,-46.63929204800168 | -46.64482029837157 | -46.64295148361138 | -46.63949930627844 | -46.64160722329613
+geolocation,geolocation_city,object,1000163,0,8011,sao paulo | sao paulo | sao paulo | sao paulo | sao paulo
+geolocation,geolocation_state,object,1000163,0,27,SP | SP | SP | SP | SP
+order_items,order_id,object,112650,0,98666,00010242fe8c5a6d1ba2dd792cb16214 | 00018f77f2f0320c557190d7a144bdd3 | 000229ec398224ef6ca0657da4fc703e | 00024acbcdf0a6daa1e931b038114c75 | 00042b26cf59d7ce69dfabb4e55b4fd9
+order_items,order_item_id,int64,112650,0,21,1 | 1 | 1 | 1 | 1
+order_items,product_id,object,112650,0,32951,4244733e06e7ecb4970a6e2683c13e61 | e5f2d52b802189ee658865ca93d83a8f | c777355d18b72b67abbeef9df44fd0fd | 7634da152a4610f1595efa32f14722fc | ac6c3623068f30de03045865e4e10089
+order_items,seller_id,object,112650,0,3095,48436dade18ac8b2bce089ec2a041202 | dd7ddc04e1b6c2c614352b383efe2d36 | 5b51032eddd242adc84c38acab88f23d | 9d7a1d34a5052409006425275ba1c2b4 | df560393f3a51e74553ab94004ba5c87
+order_items,shipping_limit_date,object,112650,0,93318,2017-09-19 09:45:35 | 2017-05-03 11:05:13 | 2018-01-18 14:48:30 | 2018-08-15 10:10:18 | 2017-02-13 13:57:51
+order_items,price,float64,112650,0,5968,58.9 | 239.9 | 199.0 | 12.99 | 199.9
+order_items,freight_value,float64,112650,0,6999,13.29 | 19.93 | 17.87 | 12.79 | 18.14
+order_payments,order_id,object,103886,0,99440,b81ef226f3fe1789b1e8b2acac839d17 | a9810da82917af2d9aefd1278f1dcfa0 | 25e8ea4e93396b6fa0d3dd708e76c1bd | ba78997921bbcdc1373bb41e913ab953 | 42fdf880ba16b47b59251dd489d4441a
+order_payments,payment_sequential,int64,103886,0,29,1 | 1 | 1 | 1 | 1
+order_payments,payment_type,object,103886,0,5,credit_card | credit_card | credit_card | credit_card | credit_card
+order_payments,payment_installments,int64,103886,0,24,8 | 1 | 1 | 8 | 2
+order_payments,payment_value,float64,103886,0,29077,99.33 | 24.39 | 65.71 | 107.78 | 128.45
+order_reviews,review_id,object,99224,0,98410,7bc2406110b926393aa56f80a40eba40 | 80e641a11e56f04c1ad469d5645fdfde | 228ce5500dc1d8e020d8d1322874b6f0 | e64fb393e7b32834bb789ff8bb30750e | f7c4243c7fe1938f181bec41a392bdeb
+order_reviews,order_id,object,99224,0,98673,73fc7af87114b39712e6da79b0a377eb | a548910a1c6147796b98fdf73dbeba33 | f9e4b658b201a9f2ecdecbb34bed034b | 658677c97b385a9be170737859d3511b | 8e6bfb81e283fa7e4f11123a3fb894f1
+order_reviews,review_score,int64,99224,0,5,4 | 5 | 5 | 5 | 5
+order_reviews,review_comment_title,object,11568,87656,4527,recomendo | Super recomendo | Não chegou meu produto  | Ótimo | Muito bom.
+order_reviews,review_comment_message,object,40977,58247,36159,"Recebi bem antes do prazo estipulado. | Parabéns lojas lannister adorei comprar pela Internet seguro e prático Parabéns a todos feliz Páscoa | aparelho eficiente. no site a marca do aparelho esta impresso como 3desinfector e ao chegar esta com outro nome...atualizar com a marca correta uma vez que é o mesmo aparelho | Mas um pouco ,travando...pelo valor ta Boa.
+ | Vendedor confiável, produto ok e entrega antes do prazo."
+order_reviews,review_creation_date,object,99224,0,636,2018-01-18 00:00:00 | 2018-03-10 00:00:00 | 2018-02-17 00:00:00 | 2017-04-21 00:00:00 | 2018-03-01 00:00:00
+order_reviews,review_answer_timestamp,object,99224,0,98248,2018-01-18 21:46:59 | 2018-03-11 03:05:13 | 2018-02-18 14:36:24 | 2017-04-21 22:02:06 | 2018-03-02 10:26:53
+orders,order_id,object,99441,0,99441,e481f51cbdc54678b7cc49136f2d6af7 | 53cdb2fc8bc7dce0b6741e2150273451 | 47770eb9100c2d0c44946d9cf07ec65d | 949d5b44dbf5de918fe9c16f97b45f8a | ad21c59c0840e6cb83a9ceb5573f8159
+orders,customer_id,object,99441,0,99441,9ef432eb6251297304e76186b10a928d | b0830fb4747a6c6d20dea0b8c802d7ef | 41ce2a54c0b03bf3443c3d931a367089 | f88197465ea7920adcdbec7375364d82 | 8ab97904e6daea8866dbdbc4fb7aad2c
+orders,order_status,object,99441,0,8,delivered | delivered | delivered | delivered | delivered
+orders,order_purchase_timestamp,object,99441,0,98875,2017-10-02 10:56:33 | 2018-07-24 20:41:37 | 2018-08-08 08:38:49 | 2017-11-18 19:28:06 | 2018-02-13 21:18:39
+orders,order_approved_at,object,99281,160,90733,2017-10-02 11:07:15 | 2018-07-26 03:24:27 | 2018-08-08 08:55:23 | 2017-11-18 19:45:59 | 2018-02-13 22:20:29
+orders,order_delivered_carrier_date,object,97658,1783,81018,2017-10-04 19:55:00 | 2018-07-26 14:31:00 | 2018-08-08 13:50:00 | 2017-11-22 13:39:59 | 2018-02-14 19:46:34
+orders,order_delivered_customer_date,object,96476,2965,95664,2017-10-10 21:25:13 | 2018-08-07 15:27:45 | 2018-08-17 18:06:29 | 2017-12-02 00:28:42 | 2018-02-16 18:17:02
+orders,order_estimated_delivery_date,object,99441,0,459,2017-10-18 00:00:00 | 2018-08-13 00:00:00 | 2018-09-04 00:00:00 | 2017-12-15 00:00:00 | 2018-02-26 00:00:00
+products,product_id,object,32951,0,32951,1e9e8ef04dbcff4541ed26657ea517e5 | 3aa071139cb16b67ca9e5dea641aaa2f | 96bd76ec8810374ed1b65e291975717f | cef67bcfe19066a932b7673e239eb23d | 9dc1a7de274444849c219cff195d0b71
+products,product_category_name,object,32341,610,73,perfumaria | artes | esporte_lazer | bebes | utilidades_domesticas
+products,product_name_lenght,float64,32341,610,66,40.0 | 44.0 | 46.0 | 27.0 | 37.0
+products,product_description_lenght,float64,32341,610,2960,287.0 | 276.0 | 250.0 | 261.0 | 402.0
+products,product_photos_qty,float64,32341,610,19,1.0 | 1.0 | 1.0 | 1.0 | 4.0
+products,product_weight_g,float64,32949,2,2204,225.0 | 1000.0 | 154.0 | 371.0 | 625.0
+products,product_length_cm,float64,32949,2,99,16.0 | 30.0 | 18.0 | 26.0 | 20.0
+products,product_height_cm,float64,32949,2,102,10.0 | 18.0 | 9.0 | 4.0 | 17.0
+products,product_width_cm,float64,32949,2,95,14.0 | 20.0 | 15.0 | 26.0 | 13.0
+sellers,seller_id,object,3095,0,3095,3442f8959a84dea7ee197c632cb2df15 | d1b65fc7debc3361ea86b5f14c68d2e2 | ce3ad9de960102d0677a81f5d0bb7b2d | c0f3eea2e14555b6faeea3dd58c1b1c3 | 51a04a8a6bdcb23deccc82b0b80742cf
+sellers,seller_zip_code_prefix,int64,3095,0,2246,13023 | 13844 | 20031 | 4195 | 12914
+sellers,seller_city,object,3095,0,611,campinas | mogi guacu | rio de janeiro | sao paulo | braganca paulista
+sellers,seller_state,object,3095,0,23,SP | SP | RJ | SP | SP
+category_translation,product_category_name,object,71,0,71,beleza_saude | informatica_acessorios | automotivo | cama_mesa_banho | moveis_decoracao
+category_translation,product_category_name_english,object,71,0,71,health_beauty | computers_accessories | auto | bed_bath_table | furniture_decor

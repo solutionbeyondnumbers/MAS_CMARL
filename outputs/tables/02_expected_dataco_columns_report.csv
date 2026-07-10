@@ -1,0 +1,17 @@
+required_role,matched_column,status
+order_id,Order Id,FOUND
+order_date,order date (DateOrders),FOUND
+shipping_date,shipping date (DateOrders),FOUND
+delivery_status,Delivery Status,FOUND
+late_delivery_risk,Late_delivery_risk,FOUND
+category,Category Name,FOUND
+product,Product Name,FOUND
+market,Market,FOUND
+region,Order Region,FOUND
+shipping_mode,Shipping Mode,FOUND
+sales,Sales,FOUND
+profit,Order Profit Per Order,FOUND
+quantity,Order Item Quantity,FOUND
+discount,Order Item Discount,FOUND
+real_shipping_days,Days for shipping (real),FOUND
+scheduled_shipping_days,Days for shipment (scheduled),FOUND

@@ -1,0 +1,14 @@
+scenario_name,stress_group,severity_level,reward_improvement_pass,risk_reduction_pass,delay_reduction_pass,service_improvement_pass,resilience_improvement_pass,passed_metrics_count,total_metrics,stress_test_status
+combined_stress_moderate,combined_stress,2,True,True,True,True,True,5,5,PASS
+combined_stress_high,combined_stress,3,True,True,True,True,True,5,5,PASS
+combined_stress_extreme,combined_stress,4,True,True,False,True,True,4,5,PASS
+demand_surge_mild,demand_surge,1,True,True,True,True,True,5,5,PASS
+demand_surge_moderate,demand_surge,2,True,True,True,True,True,5,5,PASS
+demand_surge_severe,demand_surge,3,True,True,True,True,True,5,5,PASS
+logistics_disruption_mild,logistics_disruption,1,True,True,True,True,True,5,5,PASS
+logistics_disruption_moderate,logistics_disruption,2,True,True,True,True,True,5,5,PASS
+logistics_disruption_severe,logistics_disruption,3,True,True,True,True,True,5,5,PASS
+normal,normal,0,True,True,True,True,True,5,5,PASS
+supplier_shock_mild,supplier_shock,1,True,True,True,True,True,5,5,PASS
+supplier_shock_moderate,supplier_shock,2,True,True,True,True,True,5,5,PASS
+supplier_shock_severe,supplier_shock,3,True,True,True,True,True,5,5,PASS

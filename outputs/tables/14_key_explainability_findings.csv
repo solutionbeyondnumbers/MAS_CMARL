@@ -1,0 +1,7 @@
+finding_no,finding_type,finding
+1,ML feature explainability,The strongest data-driven risk-prediction feature association was observed for rgc_graph_max_risk from the RGC graph/entity context group (absolute Spearman=0.5753).
+2,ML ablation explainability,Feature-set ablation shows that RGC-ExpandedContext achieved the highest mean macro-F1 among RGC feature variants.
+3,Policy reward driver,The strongest monotonic driver of reward improvement was dt_base_delay_prob (absolute Spearman=0.8617).
+4,Policy delay driver,The strongest monotonic driver of delay reduction was service_intensity (absolute Spearman=0.9530).
+5,Local explanation,"Local explanations were generated for 23 high-impact test decisions, showing row-level reward, risk, delay, service, and resilience differences."
+6,Stress explainability,"The strongest stress-group response was observed under combined_stress, with average reward improvement of 38.76%."

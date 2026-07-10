@@ -1,0 +1,6 @@
+﻿metric,scenario_count,mean_improvement_percent,median_improvement_percent,min_improvement_percent,max_improvement_percent,positive_scenario_count,positive_scenario_rate_percent,source
+reward_improvement_percent,6,13.776930922409392,13.800591849687681,11.125396929663223,16.50734200190617,6,100.0,Step 20 actual stress scenario summary
+risk_reduction_percent,6,14.925118455217444,16.255356097475296,-4.059969444178796,28.97451718043267,5,83.33333333333334,Step 20 actual stress scenario summary
+delay_reduction_percent,6,13.729225248040338,13.953466462921577,8.64611927539233,19.16040810304389,6,100.0,Step 20 actual stress scenario summary
+service_improvement_percent,6,10.017993365647524,7.240495590364006,5.370314190038958,23.08052870031137,6,100.0,Step 20 actual stress scenario summary
+resilience_improvement_percent,6,8.133587180468831,8.279235752957147,6.233810323112597,9.86380029806135,6,100.0,Step 20 actual stress scenario summary

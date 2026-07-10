@@ -1,0 +1,6 @@
+action_id,action_name,description,cost_factor,risk_factor,delay_factor,service_bonus,resilience_bonus,profit_factor
+0,cost_priority_procurement,Select lowest-cost procurement option with higher disruption exposure.,0.92,1.18,1.14,-0.03,0.0,1.02
+1,balanced_procurement,"Balance cost, risk, delay, and service reliability.",1.0,1.0,1.0,0.0,0.03,1.0
+2,resilience_priority_procurement,Prefer resilient supplier-route configuration with moderate cost increase.,1.07,0.78,0.82,0.06,0.12,0.96
+3,service_priority_procurement,Prefer high-service procurement option to reduce fulfillment and delay loss.,1.12,0.88,0.66,0.13,0.09,0.94
+4,risk_avoidance_procurement,Use strongest risk-avoidance decision under disruption-prone conditions.,1.16,0.62,0.74,0.07,0.18,0.92

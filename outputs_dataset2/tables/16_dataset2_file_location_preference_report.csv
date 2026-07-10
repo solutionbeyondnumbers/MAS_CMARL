@@ -1,0 +1,10 @@
+﻿table_name,current_path,preferred_path,already_in_preferred_raw_folder
+customers,E:\MAS_ML\ResilientGraph_CMARL\data\dataset2_raw\olist_customers_dataset.csv,E:\MAS_ML\ResilientGraph_CMARL\data\dataset2_raw\olist_customers_dataset.csv,True
+geolocation,E:\MAS_ML\ResilientGraph_CMARL\data\dataset2_raw\olist_geolocation_dataset.csv,E:\MAS_ML\ResilientGraph_CMARL\data\dataset2_raw\olist_geolocation_dataset.csv,True
+order_items,E:\MAS_ML\ResilientGraph_CMARL\data\dataset2_raw\olist_order_items_dataset.csv,E:\MAS_ML\ResilientGraph_CMARL\data\dataset2_raw\olist_order_items_dataset.csv,True
+order_payments,E:\MAS_ML\ResilientGraph_CMARL\data\dataset2_raw\olist_order_payments_dataset.csv,E:\MAS_ML\ResilientGraph_CMARL\data\dataset2_raw\olist_order_payments_dataset.csv,True
+order_reviews,E:\MAS_ML\ResilientGraph_CMARL\data\dataset2_raw\olist_order_reviews_dataset.csv,E:\MAS_ML\ResilientGraph_CMARL\data\dataset2_raw\olist_order_reviews_dataset.csv,True
+orders,E:\MAS_ML\ResilientGraph_CMARL\data\dataset2_raw\olist_orders_dataset.csv,E:\MAS_ML\ResilientGraph_CMARL\data\dataset2_raw\olist_orders_dataset.csv,True
+products,E:\MAS_ML\ResilientGraph_CMARL\data\dataset2_raw\olist_products_dataset.csv,E:\MAS_ML\ResilientGraph_CMARL\data\dataset2_raw\olist_products_dataset.csv,True
+sellers,E:\MAS_ML\ResilientGraph_CMARL\data\dataset2_raw\olist_sellers_dataset.csv,E:\MAS_ML\ResilientGraph_CMARL\data\dataset2_raw\olist_sellers_dataset.csv,True
+category_translation,E:\MAS_ML\ResilientGraph_CMARL\data\dataset2_raw\product_category_name_translation.csv,E:\MAS_ML\ResilientGraph_CMARL\data\dataset2_raw\product_category_name_translation.csv,True

@@ -1,0 +1,6 @@
+﻿table_name,column_name,value,count,percent
+order_payments,payment_type,credit_card,76795,73.9224
+order_payments,payment_type,boleto,19784,19.044
+order_payments,payment_type,voucher,5775,5.559
+order_payments,payment_type,debit_card,1529,1.4718
+order_payments,payment_type,not_defined,3,0.0029

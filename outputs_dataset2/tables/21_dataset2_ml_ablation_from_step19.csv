@@ -1,0 +1,33 @@
+﻿ablation_type,model_name,baseline_feature_set,proposed_feature_set,metric,baseline_value,proposed_value,absolute_improvement,percent_improvement,source
+ML feature ablation,CatBoost,Baseline,Proposed-RGC-Optimized,accuracy,0.6234465617232808,0.973192093738904,0.3497455320156232,56.09871855719033,Step 19 actual saved metrics
+ML feature ablation,CatBoost,Baseline,Proposed-RGC-Optimized,balanced_accuracy,0.6305401900891124,0.9735790036019564,0.34303881351284393,54.40395694116869,Step 19 actual saved metrics
+ML feature ablation,CatBoost,Baseline,Proposed-RGC-Optimized,macro_f1,0.6231832131142164,0.9738804745739102,0.3506972614596938,56.27514574841707,Step 19 actual saved metrics
+ML feature ablation,CatBoost,Baseline,Proposed-RGC-Optimized,weighted_f1,0.6189317326296768,0.9732258862927842,0.35429415366310735,57.242848441104385,Step 19 actual saved metrics
+ML feature ablation,CatBoost,Baseline,Proposed-RGC-Optimized,roc_auc_ovr_macro,0.8055453418265218,0.9986833020174524,0.19313796019093055,23.976050777353233,Step 19 actual saved metrics
+ML feature ablation,LightGBM,Baseline,Proposed-RGC-Optimized,accuracy,0.6242158835365132,0.9707657710971712,0.34654988756065797,55.51763367463024,Step 19 actual saved metrics
+ML feature ablation,LightGBM,Baseline,Proposed-RGC-Optimized,balanced_accuracy,0.632445459195954,0.9712270683674998,0.33878160917154587,53.56692885458434,Step 19 actual saved metrics
+ML feature ablation,LightGBM,Baseline,Proposed-RGC-Optimized,macro_f1,0.622134156721054,0.9715366722272476,0.3494025155061936,56.16192451925688,Step 19 actual saved metrics
+ML feature ablation,LightGBM,Baseline,Proposed-RGC-Optimized,weighted_f1,0.6179942347648419,0.9707956730238552,0.3528014382590132,57.088143936045064,Step 19 actual saved metrics
+ML feature ablation,LightGBM,Baseline,Proposed-RGC-Optimized,roc_auc_ovr_macro,0.8034302207661733,0.9985026968944308,0.1950724761282575,24.279952519365153,Step 19 actual saved metrics
+ML feature ablation,XGBoost,Baseline,Proposed-RGC-Optimized,accuracy,0.6194815954550834,0.9636643389750268,0.3441827435199434,55.55980129919759,Step 19 actual saved metrics
+ML feature ablation,XGBoost,Baseline,Proposed-RGC-Optimized,balanced_accuracy,0.6322811799412628,0.9646304862672426,0.3323493063259798,52.56352978224881,Step 19 actual saved metrics
+ML feature ablation,XGBoost,Baseline,Proposed-RGC-Optimized,macro_f1,0.618968765489028,0.9646143007630372,0.3456455352740092,55.84216111469298,Step 19 actual saved metrics
+ML feature ablation,XGBoost,Baseline,Proposed-RGC-Optimized,weighted_f1,0.6127885938709099,0.963689474406709,0.35090088053579915,57.262958881006846,Step 19 actual saved metrics
+ML feature ablation,XGBoost,Baseline,Proposed-RGC-Optimized,roc_auc_ovr_macro,0.8056352656133425,0.9975045961647296,0.1918693305513871,23.81590512988704,Step 19 actual saved metrics
+Best Step 19 test model,CatBoost,,Proposed-RGC-Optimized,best_test_macro_f1,,0.9738804745739102,,,Step 19 actual test ranking
+Best Step 19 test model,CatBoost,,Proposed-RGC-Optimized,best_test_accuracy,,0.973192093738904,,,Step 19 actual test ranking
+Step 19 paired improvement,CatBoost,Baseline,Proposed-RGC-Optimized,accuracy,0.6234465617232808,0.973192093738904,0.3497455320156232,56.09871855719033,Step 19 actual improvement table
+Step 19 paired improvement,CatBoost,Baseline,Proposed-RGC-Optimized,balanced_accuracy,0.6305401900891124,0.9735790036019564,0.343038813512844,54.40395694116871,Step 19 actual improvement table
+Step 19 paired improvement,CatBoost,Baseline,Proposed-RGC-Optimized,macro_f1,0.6231832131142164,0.9738804745739102,0.3506972614596938,56.27514574841707,Step 19 actual improvement table
+Step 19 paired improvement,CatBoost,Baseline,Proposed-RGC-Optimized,weighted_f1,0.6189317326296768,0.9732258862927842,0.3542941536631073,57.24284844110439,Step 19 actual improvement table
+Step 19 paired improvement,CatBoost,Baseline,Proposed-RGC-Optimized,roc_auc_ovr_macro,0.8055453418265218,0.9986833020174524,0.1931379601909304,23.97605077735322,Step 19 actual improvement table
+Step 19 paired improvement,LightGBM,Baseline,Proposed-RGC-Optimized,accuracy,0.6242158835365132,0.9707657710971712,0.3465498875606579,55.51763367463024,Step 19 actual improvement table
+Step 19 paired improvement,LightGBM,Baseline,Proposed-RGC-Optimized,balanced_accuracy,0.632445459195954,0.9712270683674998,0.3387816091715458,53.56692885458434,Step 19 actual improvement table
+Step 19 paired improvement,LightGBM,Baseline,Proposed-RGC-Optimized,macro_f1,0.622134156721054,0.9715366722272476,0.3494025155061935,56.16192451925686,Step 19 actual improvement table
+Step 19 paired improvement,LightGBM,Baseline,Proposed-RGC-Optimized,weighted_f1,0.6179942347648419,0.9707956730238552,0.3528014382590132,57.08814393604506,Step 19 actual improvement table
+Step 19 paired improvement,LightGBM,Baseline,Proposed-RGC-Optimized,roc_auc_ovr_macro,0.8034302207661733,0.9985026968944308,0.1950724761282574,24.27995251936514,Step 19 actual improvement table
+Step 19 paired improvement,XGBoost,Baseline,Proposed-RGC-Optimized,accuracy,0.6194815954550834,0.9636643389750268,0.3441827435199432,55.55980129919757,Step 19 actual improvement table
+Step 19 paired improvement,XGBoost,Baseline,Proposed-RGC-Optimized,balanced_accuracy,0.6322811799412628,0.9646304862672426,0.3323493063259798,52.56352978224881,Step 19 actual improvement table
+Step 19 paired improvement,XGBoost,Baseline,Proposed-RGC-Optimized,macro_f1,0.618968765489028,0.9646143007630372,0.3456455352740092,55.84216111469298,Step 19 actual improvement table
+Step 19 paired improvement,XGBoost,Baseline,Proposed-RGC-Optimized,weighted_f1,0.6127885938709099,0.963689474406709,0.3509008805357991,57.262958881006846,Step 19 actual improvement table
+Step 19 paired improvement,XGBoost,Baseline,Proposed-RGC-Optimized,roc_auc_ovr_macro,0.8056352656133425,0.9975045961647296,0.1918693305513871,23.81590512988704,Step 19 actual improvement table

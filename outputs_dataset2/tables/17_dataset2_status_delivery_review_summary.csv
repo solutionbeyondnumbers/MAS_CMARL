@@ -1,0 +1,13 @@
+﻿metric,value
+total_order_item_rows,112650.0
+unique_orders,98666.0
+unique_sellers,3095.0
+unique_products,32951.0
+unique_customers,98666.0
+delivered_status_rate,0.978225
+late_or_non_delivered_rate,0.099201
+low_review_rate,0.159166
+mean_delivery_delay_days,-11.348696
+mean_customer_delivery_days,12.422781
+mean_geo_distance_km,596.071063
+mean_risk_score,0.165658

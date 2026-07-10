@@ -1,0 +1,2 @@
+model_name,split,accuracy,balanced_accuracy,precision_macro,recall_macro,f1_macro,f1_weighted,roc_auc_ovr_macro
+LightGBM-RGC,test,0.9946450993426398,0.9945603388912678,0.9946936490080825,0.9945603388912678,0.9946263447549772,0.9946456152582696,0.9999013569829106

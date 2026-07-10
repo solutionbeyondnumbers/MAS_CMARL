@@ -1,0 +1,4 @@
+ablation_module,best_variant,primary_metric,primary_value,secondary_metric,secondary_value,interpretation
+ML feature ablation,CatBoost-RGC | RGC-ExpandedContext,Test Macro-F1,0.8007445299894475,Test Accuracy,0.8009454169436443,Controlled proxy-risk and train-safe graph/entity context improve risk-state classification.
+CMARL policy ablation,sthg_cmappo_risk_service_policy,Mean Reward,2.1320253217800063,Reward gain vs strongest baseline (%),26.62623777525467,Risk-service optimized CMARL gives the strongest reward and resilience trade-off.
+Stress scenario ablation,Selected CMARL policy across stress scenarios,Average reward improvement (%),35.04055414037688,Average delay reduction (%),19.486843695012627,"Selected CMARL policy maintains improvement under demand, logistics, supplier, and combined stress."

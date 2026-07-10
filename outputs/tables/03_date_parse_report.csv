@@ -1,0 +1,3 @@
+date_column,missing_before,missing_after_parse,min_date,max_date
+order date (DateOrders),0,0,2015-01-01,2018-01-31 23:38:00
+shipping date (DateOrders),0,0,2015-01-03,2018-02-06 22:14:00

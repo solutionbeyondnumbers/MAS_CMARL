@@ -1,0 +1,5 @@
+finding_no,finding_type,finding
+1,ML ablation,"The best ML ablation variant was CatBoost-RGC with RGC-ExpandedContext, achieving test macro-F1=0.8007 and test accuracy=0.8009."
+2,Feature contribution,"Compared with the strongest strict-context variant (CatBoost-RGC, macro-F1=0.6218), the best expanded/proxy variant improved macro-F1 by 0.1789."
+3,CMARL policy ablation,"The best decision-policy ablation variant was sthg_cmappo_risk_service_policy, with mean reward=2.1320, risk reduction=8.61%, and delay reduction=21.08% over the strongest baseline."
+4,Stress robustness,"Across stress scenarios, the selected CMARL policy achieved average reward improvement of 35.04%, average risk reduction of 8.61%, and average delay reduction of 19.49%."

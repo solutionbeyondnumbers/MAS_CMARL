@@ -1,0 +1,2 @@
+model_name,split,accuracy,balanced_accuracy,precision_macro,recall_macro,f1_macro,f1_weighted,roc_auc_ovr_macro
+XGBoost-RGC,test,0.5984932417460669,0.5921047662697859,0.628953336003736,0.5921047662697859,0.5802967256040762,0.5794347832654569,0.7721487804117046

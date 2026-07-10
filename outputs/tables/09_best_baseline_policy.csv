@@ -1,0 +1,2 @@
+scenario_name,policy_name,decision_count,mean_reward,total_reward,std_reward,mean_risk,mean_delay,mean_service,mean_resilience,mean_profit,mean_cost,data_split
+normal,risk_avoidance_policy,27078,1.683715286214282,45591.64252011033,1.060025786347824,0.177314587901297,0.4172509526997269,0.8262571989656896,0.9003051566544014,14.121505770572872,254.07021482422817,test

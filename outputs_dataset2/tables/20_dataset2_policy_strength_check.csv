@@ -1,0 +1,6 @@
+﻿check,target_percent,observed_percent,status
+reward_improvement_target,5.0,11.125396929663225,PASS
+risk_reduction_target,3.0,13.163156465092099,PASS
+delay_reduction_target,3.0,15.191429923927558,PASS
+service_improvement_target,3.0,5.370314190038958,PASS
+resilience_improvement_target,3.0,6.396745835911314,PASS

@@ -1,0 +1,6 @@
+finding_no,finding_type,finding
+1,Risk prediction,"CatBoost-RGC achieved the strongest leakage-safe risk-classification performance with accuracy=0.8009, macro-F1=0.8007, and ROC-AUC=0.9453."
+2,ML improvement,"Compared with CatBoost, CatBoost-RGC improved macro-F1 by 33.38% and accuracy by 28.79%."
+3,Baseline policy,"The strongest Step 09 baseline policy was risk_avoidance_policy, with mean reward=1.6837, mean risk=0.1773, and mean resilience=0.9003."
+4,CMARL improvement,The proposed sthg_cmappo_risk_service_policy improved mean reward by 26.63% over the strongest baseline.
+5,Resilience and risk,"The proposed CMARL policy reduced risk by 8.61%, reduced delay by 21.08%, improved service by 13.03%, and improved resilience by 8.77%."

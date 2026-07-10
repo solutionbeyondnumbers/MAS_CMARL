@@ -1,0 +1,57 @@
+column,dtype,role,missing_count,unique_values
+Type,object,categorical_feature_candidate,0,4
+Days for shipping (real),int64,risk_source_keep_for_step04,0,7
+Days for shipment (scheduled),int64,risk_source_keep_for_step04,0,4
+Benefit per order,float64,numeric_feature_candidate,0,21998
+Sales per customer,float64,numeric_feature_candidate,0,2927
+Delivery Status,object,risk_source_keep_for_step04,0,4
+Late_delivery_risk,int64,risk_source_keep_for_step04,0,2
+Category Id,int64,identifier_or_entity_key,0,51
+Category Name,object,categorical_feature_candidate,0,50
+Customer City,object,categorical_feature_candidate,0,563
+Customer Country,object,categorical_feature_candidate,0,2
+Customer Id,int64,identifier_or_entity_key,0,20652
+Customer Segment,object,categorical_feature_candidate,0,3
+Customer State,object,categorical_feature_candidate,0,46
+Customer Zipcode,float64,numeric_feature_candidate,0,995
+Department Id,int64,identifier_or_entity_key,0,11
+Department Name,object,categorical_feature_candidate,0,11
+Latitude,float64,numeric_feature_candidate,0,11250
+Longitude,float64,numeric_feature_candidate,0,4487
+Market,object,categorical_feature_candidate,0,5
+Order City,object,categorical_feature_candidate,0,3597
+Order Country,object,categorical_feature_candidate,0,164
+Order Customer Id,int64,identifier_or_entity_key,0,20652
+order date (DateOrders),datetime64[ns],temporal_source,0,65752
+Order Id,int64,identifier_or_entity_key,0,65752
+Order Item Cardprod Id,int64,identifier_or_entity_key,0,118
+Order Item Discount,float64,numeric_feature_candidate,0,1017
+Order Item Discount Rate,float64,numeric_feature_candidate,0,18
+Order Item Id,int64,identifier_or_entity_key,0,180519
+Order Item Product Price,float64,numeric_feature_candidate,0,75
+Order Item Profit Ratio,float64,numeric_feature_candidate,0,162
+Order Item Quantity,int64,numeric_feature_candidate,0,5
+Sales,float64,numeric_feature_candidate,0,193
+Order Item Total,float64,numeric_feature_candidate,0,2927
+Order Profit Per Order,float64,numeric_feature_candidate,0,21998
+Order Region,object,categorical_feature_candidate,0,23
+Order State,object,categorical_feature_candidate,0,1089
+Order Status,object,categorical_feature_candidate,0,9
+Product Card Id,int64,identifier_or_entity_key,0,118
+Product Category Id,int64,identifier_or_entity_key,0,51
+Product Name,object,categorical_feature_candidate,0,118
+Product Price,float64,numeric_feature_candidate,0,75
+Product Status,int64,numeric_feature_candidate,0,1
+shipping date (DateOrders),datetime64[ns],temporal_source,0,63701
+Shipping Mode,object,categorical_feature_candidate,0,4
+order_year,int32,numeric_feature_candidate,0,4
+order_month,int32,numeric_feature_candidate,0,12
+order_week,int64,numeric_feature_candidate,0,53
+order_day,int32,numeric_feature_candidate,0,31
+order_dayofweek,int32,numeric_feature_candidate,0,7
+order_quarter,int32,numeric_feature_candidate,0,4
+computed_shipping_days,int64,numeric_feature_candidate,0,6
+shipping_delay_gap,int64,risk_source_keep_for_step04,0,7
+is_delayed_by_days,int64,risk_source_keep_for_step04,0,2
+sales_per_unit,float64,numeric_feature_candidate,0,144
+profit_margin,float64,numeric_feature_candidate,0,57102

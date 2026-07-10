@@ -1,0 +1,13 @@
+state_feature_index,state_feature,description
+0,dt_sales_pressure,Scaled sales pressure
+1,dt_order_value_pressure,Scaled order-value pressure
+2,dt_quantity_pressure,Scaled order-quantity pressure
+3,dt_discount_pressure,Scaled discount pressure
+4,dt_schedule_pressure,Scaled scheduled-shipment pressure
+5,dt_profit_stress,Scaled profit stress
+6,dt_context_signal,Graph/contextual risk signal
+7,dt_base_risk,Base disruption-risk intensity
+8,dt_base_delay_prob,Base delay probability
+9,dt_demand_pressure,Demand pressure
+10,dt_cost_pressure,Cost pressure
+11,dt_service_importance,Service importance

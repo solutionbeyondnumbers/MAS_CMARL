@@ -1,0 +1,8 @@
+﻿test_name,left_table,right_table,left_key,right_key,left_rows,right_rows,matched_left_rows,unmatched_left_rows,unmatched_left_percent,status
+orders.customer_id -> customers.customer_id,orders,customers,customer_id,customer_id,99441,99441,99441,0,0.0,PASS
+order_items.order_id -> orders.order_id,order_items,orders,order_id,order_id,112650,99441,112650,0,0.0,PASS
+order_payments.order_id -> orders.order_id,order_payments,orders,order_id,order_id,103886,99441,103886,0,0.0,PASS
+order_reviews.order_id -> orders.order_id,order_reviews,orders,order_id,order_id,99224,99441,99224,0,0.0,PASS
+order_items.product_id -> products.product_id,order_items,products,product_id,product_id,112650,32951,112650,0,0.0,PASS
+order_items.seller_id -> sellers.seller_id,order_items,sellers,seller_id,seller_id,112650,3095,112650,0,0.0,PASS
+products.product_category_name -> category_translation.product_category_name,products,category_translation,product_category_name,product_category_name,32951,71,32328,13,0.0402,CHECK

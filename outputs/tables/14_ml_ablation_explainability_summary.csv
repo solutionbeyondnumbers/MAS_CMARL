@@ -1,0 +1,4 @@
+candidate_feature_set,model_count,mean_test_accuracy,mean_test_macro_f1,mean_accuracy_gain_vs_strict,mean_macro_f1_gain_vs_strict,best_test_macro_f1,best_test_accuracy,interpretation
+RGC-ExpandedContext,3,0.7842282787995174,0.7833107536385772,0.18095871186941428,0.17757283754286354,0.8007445299894475,0.8009454169436443,Adds expanded train-safe entity/context information; strongest for CatBoost-RGC.
+RGC-ProxyRiskContext,3,0.7816185341113328,0.7804565216345022,0.1783489671812295,0.17471860553878849,0.7879743766998129,0.7886476106063963,Adds controlled proxy-risk signals; improves predictive separability.
+RGC-StrictContext,3,0.6032695669301031,0.6057379160957136,0.0,0.0,0.6218301447782641,0.6247137897924514,Base train-safe graph/context configuration.

@@ -1,0 +1,11 @@
+﻿item,value
+low_moderate_threshold_q33,0.10820925857809258
+moderate_high_threshold_q66,0.16010772431970305
+weight_delivery_delay_component,0.28
+weight_order_status_component,0.15
+weight_review_service_component,0.17
+weight_freight_cost_component,0.1
+weight_seller_historical_delay_component,0.12
+weight_route_historical_delay_component,0.08
+weight_category_demand_volatility_component,0.07
+weight_payment_complexity_component,0.03

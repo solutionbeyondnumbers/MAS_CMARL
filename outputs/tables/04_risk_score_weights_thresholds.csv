@@ -1,0 +1,10 @@
+component,weight,component_mean,component_min,component_max
+delay_risk,0.18,0.23151441122541117,0.0,1.0
+late_delivery_component,0.22,0.5482913155955883,0.0,1.0
+demand_volatility_risk,0.14,0.396970832288139,0.0,1.0
+anomaly_risk,0.14,0.18538827885767023,0.006935437732617957,0.8
+shortage_exposure_risk,0.12,0.12940630969065647,0.0,1.0
+profit_loss_risk,0.1,0.062024167323118926,0.0,1.0
+shipping_risk,0.1,0.29457734452371465,0.0,1.0
+low_to_moderate_q33,0.17009622572179223,,,
+moderate_to_high_q66,0.39466319620194656,,,

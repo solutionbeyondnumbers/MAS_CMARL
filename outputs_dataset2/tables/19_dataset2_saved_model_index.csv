@@ -1,0 +1,7 @@
+﻿model_name,feature_set,model_file,feature_count
+XGBoost,Baseline,E:\MAS_ML\ResilientGraph_CMARL\outputs_dataset2\models\19_dataset2_xgboost_baseline.joblib,72
+LightGBM,Baseline,E:\MAS_ML\ResilientGraph_CMARL\outputs_dataset2\models\19_dataset2_lightgbm_baseline.joblib,72
+CatBoost,Baseline,E:\MAS_ML\ResilientGraph_CMARL\outputs_dataset2\models\19_dataset2_catboost_baseline.joblib,72
+XGBoost,Proposed-RGC-Optimized,E:\MAS_ML\ResilientGraph_CMARL\outputs_dataset2\models\19_dataset2_xgboost_proposed_rgc_optimized.joblib,176
+LightGBM,Proposed-RGC-Optimized,E:\MAS_ML\ResilientGraph_CMARL\outputs_dataset2\models\19_dataset2_lightgbm_proposed_rgc_optimized.joblib,176
+CatBoost,Proposed-RGC-Optimized,E:\MAS_ML\ResilientGraph_CMARL\outputs_dataset2\models\19_dataset2_catboost_proposed_rgc_optimized.joblib,176

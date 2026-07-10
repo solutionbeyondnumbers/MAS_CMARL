@@ -1,0 +1,2 @@
+﻿model_name,feature_set,split,feature_count,numeric_feature_count,categorical_feature_count,accuracy,balanced_accuracy,macro_precision,macro_recall,macro_f1,weighted_precision,weighted_recall,weighted_f1,roc_auc_ovr_macro,manuscript_safety_status
+CatBoost,Proposed-RGC-Optimized,valid,176,171,5,0.9758537018405634,0.9761166093640208,0.9761773157166376,0.9761166093640208,0.9761161550782024,0.9759953528642468,0.9758537018405634,0.9758931157864026,0.9988078672006434,PASS

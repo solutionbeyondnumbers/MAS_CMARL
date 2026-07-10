@@ -1,0 +1,7 @@
+﻿metric,value
+rows_before_geolocation_join,112650
+rows_after_geolocation_join,112650
+customer_geo_missing_rows,302
+seller_geo_missing_rows,253
+distance_missing_rows,554
+geolocation_unique_zip_prefixes,19015

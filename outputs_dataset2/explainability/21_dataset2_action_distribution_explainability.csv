@@ -1,0 +1,6 @@
+﻿explainability_type,policy_name,policy_group,scenario,split,action_name,count,percent,source
+Policy action distribution,seller_risk_avoidance_policy,Baseline,normal,test,seller_risk_avoidance,16898,100.0,Step 20 actual action distribution table
+Policy action distribution,sthg_cmappo_cost_resilient_policy,Proposed-CMARL,normal,test,seller_risk_avoidance,12943,76.59486329743164,Step 20 actual action distribution table
+Policy action distribution,sthg_cmappo_cost_resilient_policy,Proposed-CMARL,normal,test,service_recovery_priority,2065,12.220381110190557,Step 20 actual action distribution table
+Policy action distribution,sthg_cmappo_cost_resilient_policy,Proposed-CMARL,normal,test,accelerated_logistics,1774,10.498283820570482,Step 20 actual action distribution table
+Policy action distribution,sthg_cmappo_cost_resilient_policy,Proposed-CMARL,normal,test,balanced_fulfillment,116,0.6864717718073144,Step 20 actual action distribution table

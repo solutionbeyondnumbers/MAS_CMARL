@@ -1,0 +1,2 @@
+﻿policy_name,policy_group,split,scenario,coordinated_action,rows,mean_reward,total_reward,std_reward,mean_risk,mean_delay,mean_service,mean_resilience,mean_cost,mean_profit_proxy,dominant_action,dominant_action_percent,action_entropy,unique_actions_used,selection_score
+seller_risk_avoidance_policy,Baseline,valid,normal,0,16897,7.437497001532894,125671.38683490132,0.6059755323608996,0.0684483677438278,0.1411593531037699,0.9192004559157076,0.8966453581626859,0.42171230601233584,0.8200549013950835,seller_risk_avoidance,100.0,0.0,1,7.500319429570763

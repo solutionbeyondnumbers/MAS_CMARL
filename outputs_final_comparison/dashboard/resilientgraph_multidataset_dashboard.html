@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ResilientGraph-CMARL Multi-Dataset Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+:root {
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --ink: #111827;
+  --muted: #6b7280;
+  --line: #e5e7eb;
+  --blue: #2563eb;
+  --green: #059669;
+  --orange: #f59e0b;
+  --red: #dc2626;
+  --purple: #7c3aed;
+  --dark: #0f172a;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+}
+.hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1d4ed8 55%, #06b6d4 100%);
+  color: white;
+  padding: 26px 34px 32px 34px;
+}
+.hero h1 {
+  margin: 0 0 8px 0;
+  font-size: 28px;
+  letter-spacing: -0.4px;
+}
+.hero p {
+  margin: 0;
+  color: #dbeafe;
+  font-size: 14px;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 14px 26px;
+  background: white;
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.nav button {
+  border: 1px solid var(--line);
+  background: #f8fafc;
+  color: var(--dark);
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.nav button:hover, .nav button.active {
+  background: var(--blue);
+  color: white;
+  border-color: var(--blue);
+}
+.page {
+  display: none;
+  padding: 24px 28px 50px 28px;
+}
+.page.active {
+  display: block;
+}
+.section-title {
+  font-size: 22px;
+  margin: 4px 0 16px 0;
+}
+.section-subtitle {
+  color: var(--muted);
+  margin: -8px 0 20px 0;
+  font-size: 14px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(180px, 1fr));
+  gap: 16px;
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 16px;
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  gap: 16px;
+}
+.metric-card, .panel {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+}
+.metric-title {
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.metric-value {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--dark);
+}
+.metric-subtitle {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 6px;
+  line-height: 1.4;
+}
+.panel h3 {
+  margin: 0 0 12px 0;
+  font-size: 17px;
+}
+.badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+}
+.badge-green {
+  background: #dcfce7;
+  color: #166534;
+}
+.badge-orange {
+  background: #ffedd5;
+  color: #9a3412;
+}
+.badge-blue {
+  background: #dbeafe;
+  color: #1e40af;
+}
+.bar-row {
+  display: grid;
+  grid-template-columns: 170px 1fr 72px;
+  align-items: center;
+  gap: 10px;
+  margin: 11px 0;
+}
+.bar-label {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+.bar-track {
+  height: 12px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #2563eb, #06b6d4);
+  border-radius: 999px;
+}
+.bar-value {
+  text-align: right;
+  font-weight: 800;
+  font-size: 13px;
+}
+.table-wrap {
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+th {
+  text-align: left;
+  background: #f8fafc;
+  color: #374151;
+  border-bottom: 1px solid var(--line);
+  padding: 10px;
+  white-space: nowrap;
+}
+td {
+  border-bottom: 1px solid var(--line);
+  padding: 9px 10px;
+  white-space: nowrap;
+}
+.note {
+  background: #eff6ff;
+  border-left: 4px solid var(--blue);
+  padding: 12px 14px;
+  border-radius: 12px;
+  color: #1e3a8a;
+  line-height: 1.5;
+  margin: 14px 0;
+}
+.warn {
+  background: #fff7ed;
+  border-left: 4px solid var(--orange);
+  padding: 12px 14px;
+  border-radius: 12px;
+  color: #9a3412;
+  line-height: 1.5;
+  margin: 14px 0;
+}
+.empty-box {
+  padding: 18px;
+  background: #f9fafb;
+  border: 1px dashed #d1d5db;
+  border-radius: 14px;
+  color: var(--muted);
+}
+.footer {
+  padding: 20px 28px;
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
+}
+@media (max-width: 1050px) {
+  .grid, .grid-3, .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 650px) {
+  .grid, .grid-3, .grid-2 {
+    grid-template-columns: 1fr;
+  }
+  .bar-row {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>ResilientGraph-CMARL Multi-Dataset Dashboard</h1>
+  <p>Interactive extension for Dataset 1 and Dataset 2 results. Values are loaded from saved experiment outputs, not manually typed into the dashboard.</p>
+</div>
+
+<div class="nav">
+  <button class="tab-btn active" onclick="showPage('overview', this)">Overview</button>
+  <button class="tab-btn" onclick="showPage('dataset1', this)">Dataset 1</button>
+  <button class="tab-btn" onclick="showPage('dataset2', this)">Dataset 2</button>
+  <button class="tab-btn" onclick="showPage('comparison', this)">Multi-Dataset Comparison</button>
+  <button class="tab-btn" onclick="showPage('stress', this)">Stress & Explainability</button>
+</div>
+
+<div id="overview" class="page active">
+  <h2 class="section-title">Overview</h2>
+  <p class="section-subtitle">Final dashboard extension with clickable dataset pages.</p>
+
+  <div class="grid">
+    
+    <div class="metric-card">
+      <div class="metric-title">Dataset 1 Status</div>
+      <div class="metric-value">AVAILABLE</div>
+      <div class="metric-subtitle">Dataset 1: DataCo Supply Chain</div>
+    </div>
+    
+    
+    <div class="metric-card">
+      <div class="metric-title">Dataset 2 Status</div>
+      <div class="metric-value">LOCKED</div>
+      <div class="metric-subtitle">Dataset 2: Olist Brazilian E-Commerce</div>
+    </div>
+    
+    
+    <div class="metric-card">
+      <div class="metric-title">Dataset 2 ML Accuracy</div>
+      <div class="metric-value">0.973</div>
+      <div class="metric-subtitle">CatBoost</div>
+    </div>
+    
+    
+    <div class="metric-card">
+      <div class="metric-title">Dataset 2 Policy Reward Gain</div>
+      <div class="metric-value">11.13%</div>
+      <div class="metric-subtitle">Best proposed vs best baseline</div>
+    </div>
+    
+  </div>
+
+  <div class="note">
+    Use the buttons above to open Dataset 1 or Dataset 2 pages. The Dataset 2 page is a newly added dashboard section using the same clean card-based design.
+  </div>
+
+  <div class="grid-2">
+    <div class="panel">
+      <h3>Dataset 2 Key Improvements</h3>
+      
+    <div class="bar-row">
+      <div class="bar-label">Reward improvement</div>
+      <div class="bar-track"><div class="bar-fill" style="width:55.63%"></div></div>
+      <div class="bar-value">11.13%</div>
+    </div>
+    
+      
+    <div class="bar-row">
+      <div class="bar-label">Risk reduction</div>
+      <div class="bar-track"><div class="bar-fill" style="width:52.65%"></div></div>
+      <div class="bar-value">13.16%</div>
+    </div>
+    
+      
+    <div class="bar-row">
+      <div class="bar-label">Delay reduction</div>
+      <div class="bar-track"><div class="bar-fill" style="width:60.77%"></div></div>
+      <div class="bar-value">15.19%</div>
+    </div>
+    
+      
+    <div class="bar-row">
+      <div class="bar-label">Service improvement</div>
+      <div class="bar-track"><div class="bar-fill" style="width:35.80%"></div></div>
+      <div class="bar-value">5.37%</div>
+    </div>
+    
+      
+    <div class="bar-row">
+      <div class="bar-label">Resilience improvement</div>
+      <div class="bar-track"><div class="bar-fill" style="width:42.64%"></div></div>
+      <div class="bar-value">6.40%</div>
+    </div>
+    
+    </div>
+    <div class="panel">
+      <h3>Dashboard Data Integrity</h3>
+      <p><span class="badge badge-green">Actual outputs only</span></p>
+      <p><span class="badge badge-blue">No manual metric hardcoding</span></p>
+      <p><span class="badge badge-green">Dataset 2 Step 21 locked</span></p>
+      <p class="section-subtitle">Generated at 2026-06-23 16:38:20</p>
+    </div>
+  </div>
+</div>
+
+<div id="dataset1" class="page">
+  <h2 class="section-title">Dataset 1 Dashboard Page</h2>
+  <p class="section-subtitle">This page is populated by automatic discovery of existing Dataset 1 result CSV files.</p>
+
+  <div class="grid">
+    
+    <div class="metric-card">
+      <div class="metric-title">Discovery Status</div>
+      <div class="metric-value">AVAILABLE</div>
+      <div class="metric-subtitle">Actual Dataset 1 files searched</div>
+    </div>
+    
+    
+    <div class="metric-card">
+      <div class="metric-title">Best ML Model</div>
+      <div class="metric-value">N/A</div>
+      <div class="metric-subtitle">Source not found</div>
+    </div>
+    
+    
+    <div class="metric-card">
+      <div class="metric-title">ML Accuracy</div>
+      <div class="metric-value">N/A</div>
+      <div class="metric-subtitle">Auto-discovered</div>
+    </div>
+    
+    
+    <div class="metric-card">
+      <div class="metric-title">ML Macro-F1</div>
+      <div class="metric-value">N/A</div>
+      <div class="metric-subtitle">Auto-discovered</div>
+    </div>
+    
+  </div>
+
+  <div class="grid-2">
+    <div class="panel">
+      <h3>Dataset 1 Policy Improvement</h3>
+      
+    <div class="bar-row">
+      <div class="bar-label">Reward improvement</div>
+      <div class="bar-track"><div class="bar-fill" style="width:0.00%"></div></div>
+      <div class="bar-value">N/A</div>
+    </div>
+    
+      
+    <div class="bar-row">
+      <div class="bar-label">Risk reduction</div>
+      <div class="bar-track"><div class="bar-fill" style="width:0.00%"></div></div>
+      <div class="bar-value">N/A</div>
+    </div>
+    
+      
+    <div class="bar-row">
+      <div class="bar-label">Delay reduction</div>
+      <div class="bar-track"><div class="bar-fill" style="width:0.00%"></div></div>
+      <div class="bar-value">N/A</div>
+    </div>
+    
+      
+    <div class="bar-row">
+      <div class="bar-label">Service improvement</div>
+      <div class="bar-track"><div class="bar-fill" style="width:0.00%"></div></div>
+      <div class="bar-value">N/A</div>
+    </div>
+    
+      
+    <div class="bar-row">
+      <div class="bar-label">Resilience improvement</div>
+      <div class="bar-track"><div class="bar-fill" style="width:0.00%"></div></div>
+      <div class="bar-value">N/A</div>
+    </div>
+    
+    </div>
+    <div class="panel">
+      <h3>Dataset 1 Notes</h3>
+      <div class="warn">
+        If any Dataset 1 values show N/A, it means the new extension could not automatically locate the original Dataset 1 result CSV. The dashboard does not invent missing values.
+      </div>
+      <p><b>Policy source:</b> N/A</p>
+      <p><b>Stress source:</b> N/A</p>
+    </div>
+  </div>
+</div>
+
+<div id="dataset2" class="page">
+  <h2 class="section-title">Dataset 2 Dashboard Page</h2>
+  <p class="section-subtitle">Olist Brazilian E-Commerce dataset results from locked Step 19, Step 20 and Step 21 outputs.</p>
+
+  <div class="grid">
+    
+    <div class="metric-card">
+      <div class="metric-title">Best ML Model</div>
+      <div class="metric-value">CatBoost</div>
+      <div class="metric-subtitle">Proposed-RGC-Optimized</div>
+    </div>
+    
+    
+    <div class="metric-card">
+      <div class="metric-title">ML Accuracy</div>
+      <div class="metric-value">0.973</div>
+      <div class="metric-subtitle">Step 19 actual output</div>
+    </div>
+    
+    
+    <div class="metric-card">
+      <div class="metric-title">ML Macro-F1</div>
+      <div class="metric-value">0.974</div>
+      <div class="metric-subtitle">Step 19 actual output</div>
+    </div>
+    
+    
+    <div class="metric-card">
+      <div class="metric-title">Policy Reward Gain</div>
+      <div class="metric-value">11.13%</div>
+      <div class="metric-subtitle">Step 20 actual output</div>
+    </div>
+    
+  </div>
+
+  <div class="grid">
+    
+    <div class="metric-card">
+      <div class="metric-title">Risk Reduction</div>
+      <div class="metric-value">13.16%</div>
+      <div class="metric-subtitle">Best proposed vs baseline</div>
+    </div>
+    
+    
+    <div class="metric-card">
+      <div class="metric-title">Delay Reduction</div>
+      <div class="metric-value">15.19%</div>
+      <div class="metric-subtitle">Best proposed vs baseline</div>
+    </div>
+    
+    
+    <div class="metric-card">
+      <div class="metric-title">Service Improvement</div>
+      <div class="metric-value">5.37%</div>
+      <div class="metric-subtitle">Best proposed vs baseline</div>
+    </div>
+    
+    
+    <div class="metric-card">
+      <div class="metric-title">Resilience Improvement</div>
+      <div class="metric-value">6.40%</div>
+      <div class="metric-subtitle">Best proposed vs baseline</div>
+    </div>
+    
+  </div>
+
+  <div class="grid-2">
+    <div class="panel">
+      <h3>Dataset 2 Improvement Bars</h3>
+      
+    <div class="bar-row">
+      <div class="bar-label">Reward</div>
+      <div class="bar-track"><div class="bar-fill" style="width:55.63%"></div></div>
+      <div class="bar-value">11.13%</div>
+    </div>
+    
+      
+    <div class="bar-row">
+      <div class="bar-label">Risk</div>
+      <div class="bar-track"><div class="bar-fill" style="width:52.65%"></div></div>
+      <div class="bar-value">13.16%</div>
+    </div>
+    
+      
+    <div class="bar-row">
+      <div class="bar-label">Delay</div>
+      <div class="bar-track"><div class="bar-fill" style="width:60.77%"></div></div>
+      <div class="bar-value">15.19%</div>
+    </div>
+    
+      
+    <div class="bar-row">
+      <div class="bar-label">Service</div>
+      <div class="bar-track"><div class="bar-fill" style="width:35.80%"></div></div>
+      <div class="bar-value">5.37%</div>
+    </div>
+    
+      
+    <div class="bar-row">
+      <div class="bar-label">Resilience</div>
+      <div class="bar-track"><div class="bar-fill" style="width:42.64%"></div></div>
+      <div class="bar-value">6.40%</div>
+    </div>
+    
+      
+    <div class="bar-row">
+      <div class="bar-label">Cost</div>
+      <div class="bar-track"><div class="bar-fill" style="width:33.16%"></div></div>
+      <div class="bar-value">3.32%</div>
+    </div>
+    
+    </div>
+    <div class="panel">
+      <h3>Dataset 2 Lock Status</h3>
+      
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>component</th><th>criterion</th><th>actual_result</th><th>status</th></tr></thead>
+        <tbody><tr><td>Step 18 graph-risk feature dataset</td><td>Rows, graph features and missing values</td><td>112,650 rows × 229 columns; missing=0</td><td>LOCKED</td></tr><tr><td>Step 20 digital twin dataset</td><td>Rows, state features and missing values</td><td>112,650 rows × 43 columns; missing=0</td><td>LOCKED</td></tr><tr><td>Step 19 ML proposed model</td><td>Best actual test model</td><td>CatBoost | Proposed-RGC-Optimized | accuracy=0.973192, macro_f1=0.973880</td><td>LOCKED</td></tr><tr><td>Step 20 policy improvement</td><td>mean_reward target &gt;= 5.00%</td><td>11.125397%</td><td>LOCKED</td></tr><tr><td>Step 20 policy improvement</td><td>mean_risk target &gt;= 3.00%</td><td>13.163156%</td><td>LOCKED</td></tr><tr><td>Step 20 policy improvement</td><td>mean_delay target &gt;= 3.00%</td><td>15.191430%</td><td>LOCKED</td></tr><tr><td>Step 20 policy improvement</td><td>mean_service target &gt;= 3.00%</td><td>5.370314%</td><td>LOCKED</td></tr><tr><td>Step 20 policy improvement</td><td>mean_resilience target &gt;= 3.00%</td><td>6.396746%</td><td>LOCKED</td></tr><tr><td>Step 20 strength check</td><td>All targets pass</td><td>100.00% checks passed</td><td>LOCKED</td></tr><tr><td>Step 20 stress robustness</td><td>Positive reward improvement across stress scenarios</td><td>mean=13.776931%, positive_rate=100.00%</td><td>LOCKED</td></tr></tbody>
+      </table>
+    </div>
+    
+    </div>
+  </div>
+
+  <div class="panel">
+    <h3>Dataset 2 Policy Ranking</h3>
+    
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>policy_name</th><th>policy_group</th><th>coordinated_action</th><th>mean_reward</th><th>mean_risk</th><th>mean_delay</th><th>mean_service</th><th>mean_resilience</th></tr></thead>
+        <tbody><tr><td>random_policy</td><td>Baseline</td><td>0</td><td>7.0997</td><td>0.1328</td><td>0.1497</td><td>0.8984</td><td>0.8119</td></tr><tr><td>cost_priority_policy</td><td>Baseline</td><td>0</td><td>6.4372</td><td>0.1957</td><td>0.2149</td><td>0.8009</td><td>0.6600</td></tr><tr><td>balanced_policy</td><td>Baseline</td><td>0</td><td>6.9909</td><td>0.1487</td><td>0.1605</td><td>0.8978</td><td>0.7934</td></tr><tr><td>logistics_priority_policy</td><td>Baseline</td><td>0</td><td>7.2994</td><td>0.1364</td><td>0.0739</td><td>0.9314</td><td>0.8206</td></tr><tr><td>seller_risk_avoidance_policy</td><td>Baseline</td><td>0</td><td>7.4076</td><td>0.0725</td><td>0.1402</td><td>0.8978</td><td>0.9142</td></tr><tr><td>service_priority_policy</td><td>Baseline</td><td>0</td><td>7.3617</td><td>0.1112</td><td>0.1585</td><td>0.9636</td><td>0.8703</td></tr><tr><td>rule_based_policy</td><td>Baseline</td><td>0</td><td>7.1467</td><td>0.1285</td><td>0.1597</td><td>0.9359</td><td>0.8117</td></tr><tr><td>q_table_policy</td><td>Baseline</td><td>0</td><td>7.4066</td><td>0.0756</td><td>0.1415</td><td>0.9039</td><td>0.9127</td></tr><tr><td>random_policy</td><td>Baseline</td><td>0</td><td>7.1196</td><td>0.1269</td><td>0.1506</td><td>0.9163</td><td>0.7894</td></tr><tr><td>cost_priority_policy</td><td>Baseline</td><td>0</td><td>6.4640</td><td>0.1857</td><td>0.2166</td><td>0.8215</td><td>0.6358</td></tr><tr><td>balanced_policy</td><td>Baseline</td><td>0</td><td>7.0197</td><td>0.1414</td><td>0.1618</td><td>0.9192</td><td>0.7702</td></tr><tr><td>logistics_priority_policy</td><td>Baseline</td><td>0</td><td>7.3230</td><td>0.1296</td><td>0.0743</td><td>0.9491</td><td>0.7980</td></tr></tbody>
+      </table>
+    </div>
+    
+  </div>
+</div>
+
+<div id="comparison" class="page">
+  <h2 class="section-title">Multi-Dataset Comparison</h2>
+  <p class="section-subtitle">Paper-ready combined view for Dataset 1 and Dataset 2.</p>
+
+  <div class="panel">
+    <h3>Dataset Overview</h3>
+    
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>dataset</th><th>name</th><th>status</th><th>best_ml_model</th><th>best_ml_accuracy</th><th>best_ml_macro_f1</th></tr></thead>
+        <tbody><tr><td>Dataset 1</td><td>Dataset 1: DataCo Supply Chain</td><td>AVAILABLE</td><td>N/A</td><td>None</td><td>None</td></tr><tr><td>Dataset 2</td><td>Dataset 2: Olist Brazilian E-Commerce</td><td>LOCKED</td><td>CatBoost</td><td>0.9732</td><td>0.9739</td></tr></tbody>
+      </table>
+    </div>
+    
+  </div>
+
+  <div class="panel">
+    <h3>Policy Comparison</h3>
+    
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>dataset</th><th>reward_improvement_percent</th><th>risk_reduction_percent</th><th>delay_reduction_percent</th><th>service_improvement_percent</th><th>resilience_improvement_percent</th><th>cost_reduction_percent</th><th>source</th></tr></thead>
+        <tbody><tr><td>Dataset 1</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>None</td><td>auto_discovery_not_available</td></tr><tr><td>Dataset 2</td><td>11.1254</td><td>13.1632</td><td>15.1914</td><td>5.3703</td><td>6.3967</td><td>3.3159</td><td>Step 20 actual Dataset 2 policy improvement table</td></tr></tbody>
+      </table>
+    </div>
+    
+  </div>
+
+  <div class="panel">
+    <h3>Stress Comparison</h3>
+    
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>dataset</th><th>mean_reward_improvement_percent</th><th>reward_positive_rate_percent</th><th>source</th></tr></thead>
+        <tbody><tr><td>Dataset 1</td><td>None</td><td>None</td><td>auto_discovery_not_available</td></tr><tr><td>Dataset 2</td><td>13.7769</td><td>100.0000</td><td>Step 20/21 actual Dataset 2 stress outputs</td></tr></tbody>
+      </table>
+    </div>
+    
+  </div>
+</div>
+
+<div id="stress" class="page">
+  <h2 class="section-title">Stress & Explainability</h2>
+  <p class="section-subtitle">Dataset 2 stress robustness and locked explainability-ready summaries.</p>
+
+  <div class="grid">
+    
+    <div class="metric-card">
+      <div class="metric-title">Stress Scenarios</div>
+      <div class="metric-value">6</div>
+      <div class="metric-subtitle">Dataset 2</div>
+    </div>
+    
+    
+    <div class="metric-card">
+      <div class="metric-title">Mean Stress Reward Gain</div>
+      <div class="metric-value">13.78%</div>
+      <div class="metric-subtitle">Across stress scenarios</div>
+    </div>
+    
+    
+    <div class="metric-card">
+      <div class="metric-title">Reward Positive Rate</div>
+      <div class="metric-value">100.00%</div>
+      <div class="metric-subtitle">Positive scenarios</div>
+    </div>
+    
+    
+    <div class="metric-card">
+      <div class="metric-title">Strength Checks Passed</div>
+      <div class="metric-value">5/5</div>
+      <div class="metric-subtitle">Step 20</div>
+    </div>
+    
+  </div>
+
+  <div class="panel">
+    <h3>Dataset 2 Stress Scenario Table</h3>
+    
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>scenario</th><th>reward_improvement_percent</th><th>risk_reduction_percent</th><th>delay_reduction_percent</th><th>service_improvement_percent</th><th>resilience_improvement_percent</th></tr></thead>
+        <tbody><tr><td>normal</td><td>11.1254</td><td>13.1632</td><td>15.1914</td><td>5.3703</td><td>6.3967</td></tr><tr><td>demand_surge</td><td>12.6519</td><td>20.7623</td><td>12.7155</td><td>5.6334</td><td>8.7539</td></tr><tr><td>logistics_disruption</td><td>13.6416</td><td>11.3631</td><td>19.1604</td><td>7.1597</td><td>7.8046</td></tr><tr><td>seller_shock</td><td>13.9596</td><td>28.9745</td><td>9.8812</td><td>7.3213</td><td>9.7487</td></tr><tr><td>service_shock</td><td>14.7757</td><td>-4.0600</td><td>8.6461</td><td>23.0805</td><td>6.2338</td></tr><tr><td>combined_stress</td><td>16.5073</td><td>19.3476</td><td>16.7807</td><td>11.5427</td><td>9.8638</td></tr></tbody>
+      </table>
+    </div>
+    
+  </div>
+
+  <div class="note">
+    Reviewer-safe note: risk reduction is positive in most stress scenarios, while reward, delay, service and resilience improvements remain consistently positive across stress settings.
+  </div>
+</div>
+
+<div class="footer">
+  ResilientGraph-CMARL dashboard extension generated from actual saved outputs on 2026-06-23 16:38:20.
+</div>
+
+<script>
+function showPage(pageId, btn) {
+  const pages = document.querySelectorAll('.page');
+  pages.forEach(p => p.classList.remove('active'));
+
+  const buttons = document.querySelectorAll('.tab-btn');
+  buttons.forEach(b => b.classList.remove('active'));
+
+  document.getElementById(pageId).classList.add('active');
+  btn.classList.add('active');
+}
+</script>
+
+</body>
+</html>

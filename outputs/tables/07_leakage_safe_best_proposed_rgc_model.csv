@@ -1,0 +1,2 @@
+model_name,split,accuracy,balanced_accuracy,precision_macro,recall_macro,f1_macro,f1_weighted,roc_auc_ovr_macro
+CatBoost-RGC,test,0.8009454169436443,0.7994415679795818,0.8059775191724089,0.7994415679795818,0.8007445299894475,0.8003919985349143,0.9452907988647898

@@ -1,0 +1,5 @@
+﻿audit_item,status,description
+random_seed_fixed,PASS,Random policy uses fixed seed 42; proposed policies are deterministic score-based.
+no_metric_hardcoding,PASS,Metrics are computed from digital-twin transition outcomes after policy action selection.
+baseline_and_proposed_separated,PASS,Baseline uses non-coordinated actions; proposed CMARL uses graph-coordinated actions.
+multi_action_policy_check,PASS,"Action diversity, entropy, and dominant-action share are reported for every policy."

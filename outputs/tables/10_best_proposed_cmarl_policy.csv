@@ -1,0 +1,2 @@
+scenario_name,policy_name,decision_count,mean_reward,total_reward,std_reward,mean_risk,mean_delay,mean_service,mean_resilience,mean_profit,mean_cost,data_split
+normal,sthg_cmappo_risk_service_policy,27078,2.1320253217800063,57730.98166315901,0.8106593864395166,0.16204438645496555,0.32930736187544307,0.9339006572088253,0.9792480300392434,18.92282191333674,241.99213707837848,test

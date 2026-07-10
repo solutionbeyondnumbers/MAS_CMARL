@@ -1,0 +1,6 @@
+﻿action_id,action_name,description
+0,cost_priority_fulfillment,Prioritise lower fulfilment cost when operational pressure is low.
+1,balanced_fulfillment,"Balance fulfilment cost, delivery reliability, service, and risk."
+2,accelerated_logistics,Reduce expected delivery delay through faster logistics handling.
+3,seller_risk_avoidance,Avoid risky seller-route fulfilment exposure.
+4,service_recovery_priority,Improve customer service recovery and satisfaction.

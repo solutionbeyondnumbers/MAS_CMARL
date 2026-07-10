@@ -1,0 +1,10 @@
+﻿table_name,rows,columns,memory_mb,duplicate_rows,total_missing_values,missing_percent_total_cells,status
+customers,99441,5,29.6211,0,0,0.0,LOADED
+geolocation,1000163,5,145.2022,261831,0,0.0,LOADED
+order_items,112650,7,39.4275,0,0,0.0,LOADED
+order_payments,103886,5,17.8146,0,0,0.0,LOADED
+order_reviews,99224,7,42.7467,0,145903,21.0063,LOADED
+orders,99441,8,58.9692,0,4908,0.6169,LOADED
+products,32951,9,6.7947,0,2448,0.8255,LOADED
+sellers,3095,4,0.6589,0,0,0.0,LOADED
+category_translation,71,2,0.0101,0,0,0.0,LOADED

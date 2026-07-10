@@ -1,0 +1,11 @@
+﻿component,criterion,actual_result,status,source
+Step 18 graph-risk feature dataset,"Rows, graph features and missing values","112,650 rows × 229 columns; missing=0",LOCKED,Step 18 actual graph-risk feature file
+Step 20 digital twin dataset,"Rows, state features and missing values","112,650 rows × 43 columns; missing=0",LOCKED,Step 20 actual digital-twin file
+Step 19 ML proposed model,Best actual test model,"CatBoost | Proposed-RGC-Optimized | accuracy=0.973192, macro_f1=0.973880",LOCKED,Step 19 actual test ranking
+Step 20 policy improvement,mean_reward target >= 5.00%,11.125397%,LOCKED,Step 20 actual policy improvement table
+Step 20 policy improvement,mean_risk target >= 3.00%,13.163156%,LOCKED,Step 20 actual policy improvement table
+Step 20 policy improvement,mean_delay target >= 3.00%,15.191430%,LOCKED,Step 20 actual policy improvement table
+Step 20 policy improvement,mean_service target >= 3.00%,5.370314%,LOCKED,Step 20 actual policy improvement table
+Step 20 policy improvement,mean_resilience target >= 3.00%,6.396746%,LOCKED,Step 20 actual policy improvement table
+Step 20 strength check,All targets pass,100.00% checks passed,LOCKED,Step 20 actual strength check table
+Step 20 stress robustness,Positive reward improvement across stress scenarios,"mean=13.776931%, positive_rate=100.00%",LOCKED,Step 20 actual stress summary

@@ -1,0 +1,10 @@
+﻿table_name,expected_file,file_found,file_path,file_size_mb
+customers,olist_customers_dataset.csv,True,E:\MAS_ML\ResilientGraph_CMARL\data\dataset2_raw\olist_customers_dataset.csv,8.6155
+geolocation,olist_geolocation_dataset.csv,True,E:\MAS_ML\ResilientGraph_CMARL\data\dataset2_raw\olist_geolocation_dataset.csv,58.4353
+order_items,olist_order_items_dataset.csv,True,E:\MAS_ML\ResilientGraph_CMARL\data\dataset2_raw\olist_order_items_dataset.csv,14.7235
+order_payments,olist_order_payments_dataset.csv,True,E:\MAS_ML\ResilientGraph_CMARL\data\dataset2_raw\olist_order_payments_dataset.csv,5.5095
+order_reviews,olist_order_reviews_dataset.csv,True,E:\MAS_ML\ResilientGraph_CMARL\data\dataset2_raw\olist_order_reviews_dataset.csv,13.7822
+orders,olist_orders_dataset.csv,True,E:\MAS_ML\ResilientGraph_CMARL\data\dataset2_raw\olist_orders_dataset.csv,16.837
+products,olist_products_dataset.csv,True,E:\MAS_ML\ResilientGraph_CMARL\data\dataset2_raw\olist_products_dataset.csv,2.2692
+sellers,olist_sellers_dataset.csv,True,E:\MAS_ML\ResilientGraph_CMARL\data\dataset2_raw\olist_sellers_dataset.csv,0.1666
+category_translation,product_category_name_translation.csv,True,E:\MAS_ML\ResilientGraph_CMARL\data\dataset2_raw\product_category_name_translation.csv,0.0025

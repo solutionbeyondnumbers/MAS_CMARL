@@ -1,0 +1,17 @@
+RESILIENTGRAPH-CMARL MULTI-DATASET EXECUTIVE SUMMARY
+==========================================================================================
+Generated: 2026-06-23 17:25:49
+
+Dataset 1 Summary
+------------------------------------------------------------------------------------------
+Risk Prediction: Macro-F1 improved from 0.6003 to 0.8007, with 33.38% relative gain.
+Digital Twin Decision Optimization: Mean Reward improved from 1.6837 to 2.1320, with 26.63% relative gain.
+
+Dataset 2 Summary
+------------------------------------------------------------------------------------------
+Best Dataset 2 ML model: CatBoost using Proposed-RGC-Optimized achieved accuracy 0.9732 and macro-F1 0.9739.
+The Dataset 2 graph-coordinated CMARL policy improved reward by 11.13%, reduced risk by 13.16%, reduced delay by 15.19%, improved service by 5.37%, and improved resilience by 6.40% over the strongest non-coordinated baseline.
+Across Dataset 2 stress scenarios, mean reward improvement was 13.78%, with reward improvement positive in 100.00% of stress settings.
+
+Reviewer-safe caution:
+Dataset 2 results are based on graph-coordinated digital-twin policy validation against non-coordinated baseline policies. Risk reduction is positive in most, but not all, stress settings; therefore stress-risk findings should be worded as majority-positive rather than universally positive.

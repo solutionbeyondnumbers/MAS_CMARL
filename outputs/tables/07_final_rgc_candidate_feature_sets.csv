@@ -1,0 +1,245 @@
+candidate_feature_set,feature,dtype,feature_group
+RGC-RiskIndicator,Type,object,baseline_feature
+RGC-RiskIndicator,Sales per customer,float64,baseline_feature
+RGC-RiskIndicator,Category Name,object,baseline_feature
+RGC-RiskIndicator,Customer City,object,baseline_feature
+RGC-RiskIndicator,Customer Country,object,baseline_feature
+RGC-RiskIndicator,Customer Segment,object,baseline_feature
+RGC-RiskIndicator,Customer State,object,baseline_feature
+RGC-RiskIndicator,Department Name,object,baseline_feature
+RGC-RiskIndicator,Market,object,baseline_feature
+RGC-RiskIndicator,Order City,object,baseline_feature
+RGC-RiskIndicator,Order Country,object,baseline_feature
+RGC-RiskIndicator,Order Item Discount,float64,baseline_feature
+RGC-RiskIndicator,Order Item Discount Rate,float64,baseline_feature
+RGC-RiskIndicator,Order Item Product Price,float64,baseline_feature
+RGC-RiskIndicator,Order Item Quantity,int64,baseline_feature
+RGC-RiskIndicator,Sales,float64,baseline_feature
+RGC-RiskIndicator,Order Item Total,float64,baseline_feature
+RGC-RiskIndicator,Order Region,object,baseline_feature
+RGC-RiskIndicator,Order State,object,baseline_feature
+RGC-RiskIndicator,Product Name,object,baseline_feature
+RGC-RiskIndicator,Product Price,float64,baseline_feature
+RGC-RiskIndicator,Product Status,int64,baseline_feature
+RGC-RiskIndicator,Shipping Mode,object,baseline_feature
+RGC-RiskIndicator,order_year,int64,baseline_feature
+RGC-RiskIndicator,order_month,int64,baseline_feature
+RGC-RiskIndicator,order_week,int64,baseline_feature
+RGC-RiskIndicator,order_day,int64,baseline_feature
+RGC-RiskIndicator,order_dayofweek,int64,baseline_feature
+RGC-RiskIndicator,order_quarter,int64,baseline_feature
+RGC-RiskIndicator,sales_per_unit,float64,baseline_feature
+RGC-RiskIndicator,qty_lag_1,float64,baseline_feature
+RGC-RiskIndicator,qty_lag_3,float64,baseline_feature
+RGC-RiskIndicator,qty_lag_7,float64,baseline_feature
+RGC-RiskIndicator,qty_roll_mean_3,float64,baseline_feature
+RGC-RiskIndicator,qty_roll_mean_7,float64,baseline_feature
+RGC-RiskIndicator,qty_roll_std_7,float64,baseline_feature
+RGC-RiskIndicator,delay_lag_1,float64,baseline_feature
+RGC-RiskIndicator,delay_roll_mean_7,float64,baseline_feature
+RGC-RiskIndicator,delay_roll_std_7,float64,baseline_feature
+RGC-RiskIndicator,profit_lag_1,float64,baseline_feature
+RGC-RiskIndicator,profit_roll_mean_7,float64,baseline_feature
+RGC-RiskIndicator,profit_roll_std_7,float64,baseline_feature
+RGC-RiskIndicator,delay_risk,float64,baseline_feature
+RGC-RiskIndicator,late_delivery_component,int64,baseline_feature
+RGC-RiskIndicator,demand_volatility_risk,float64,baseline_feature
+RGC-RiskIndicator,anomaly_risk,float64,baseline_feature
+RGC-RiskIndicator,shortage_exposure_risk,float64,baseline_feature
+RGC-RiskIndicator,profit_loss_risk,float64,baseline_feature
+RGC-RiskIndicator,shipping_risk,float64,baseline_feature
+RGC-RiskIndicator,shipping_mode_historical_late_rate,float64,baseline_feature
+RGC-RiskIndicator-Graph,Type,object,baseline_feature
+RGC-RiskIndicator-Graph,Sales per customer,float64,baseline_feature
+RGC-RiskIndicator-Graph,Category Name,object,baseline_feature
+RGC-RiskIndicator-Graph,Customer City,object,baseline_feature
+RGC-RiskIndicator-Graph,Customer Country,object,baseline_feature
+RGC-RiskIndicator-Graph,Customer Segment,object,baseline_feature
+RGC-RiskIndicator-Graph,Customer State,object,baseline_feature
+RGC-RiskIndicator-Graph,Department Name,object,baseline_feature
+RGC-RiskIndicator-Graph,Market,object,baseline_feature
+RGC-RiskIndicator-Graph,Order City,object,baseline_feature
+RGC-RiskIndicator-Graph,Order Country,object,baseline_feature
+RGC-RiskIndicator-Graph,Order Item Discount,float64,baseline_feature
+RGC-RiskIndicator-Graph,Order Item Discount Rate,float64,baseline_feature
+RGC-RiskIndicator-Graph,Order Item Product Price,float64,baseline_feature
+RGC-RiskIndicator-Graph,Order Item Quantity,int64,baseline_feature
+RGC-RiskIndicator-Graph,Sales,float64,baseline_feature
+RGC-RiskIndicator-Graph,Order Item Total,float64,baseline_feature
+RGC-RiskIndicator-Graph,Order Region,object,baseline_feature
+RGC-RiskIndicator-Graph,Order State,object,baseline_feature
+RGC-RiskIndicator-Graph,Product Name,object,baseline_feature
+RGC-RiskIndicator-Graph,Product Price,float64,baseline_feature
+RGC-RiskIndicator-Graph,Product Status,int64,baseline_feature
+RGC-RiskIndicator-Graph,Shipping Mode,object,baseline_feature
+RGC-RiskIndicator-Graph,order_year,int64,baseline_feature
+RGC-RiskIndicator-Graph,order_month,int64,baseline_feature
+RGC-RiskIndicator-Graph,order_week,int64,baseline_feature
+RGC-RiskIndicator-Graph,order_day,int64,baseline_feature
+RGC-RiskIndicator-Graph,order_dayofweek,int64,baseline_feature
+RGC-RiskIndicator-Graph,order_quarter,int64,baseline_feature
+RGC-RiskIndicator-Graph,sales_per_unit,float64,baseline_feature
+RGC-RiskIndicator-Graph,qty_lag_1,float64,baseline_feature
+RGC-RiskIndicator-Graph,qty_lag_3,float64,baseline_feature
+RGC-RiskIndicator-Graph,qty_lag_7,float64,baseline_feature
+RGC-RiskIndicator-Graph,qty_roll_mean_3,float64,baseline_feature
+RGC-RiskIndicator-Graph,qty_roll_mean_7,float64,baseline_feature
+RGC-RiskIndicator-Graph,qty_roll_std_7,float64,baseline_feature
+RGC-RiskIndicator-Graph,delay_lag_1,float64,baseline_feature
+RGC-RiskIndicator-Graph,delay_roll_mean_7,float64,baseline_feature
+RGC-RiskIndicator-Graph,delay_roll_std_7,float64,baseline_feature
+RGC-RiskIndicator-Graph,profit_lag_1,float64,baseline_feature
+RGC-RiskIndicator-Graph,profit_roll_mean_7,float64,baseline_feature
+RGC-RiskIndicator-Graph,profit_roll_std_7,float64,baseline_feature
+RGC-RiskIndicator-Graph,delay_risk,float64,baseline_feature
+RGC-RiskIndicator-Graph,late_delivery_component,int64,baseline_feature
+RGC-RiskIndicator-Graph,demand_volatility_risk,float64,baseline_feature
+RGC-RiskIndicator-Graph,anomaly_risk,float64,baseline_feature
+RGC-RiskIndicator-Graph,shortage_exposure_risk,float64,baseline_feature
+RGC-RiskIndicator-Graph,profit_loss_risk,float64,baseline_feature
+RGC-RiskIndicator-Graph,shipping_risk,float64,baseline_feature
+RGC-RiskIndicator-Graph,shipping_mode_historical_late_rate,float64,baseline_feature
+RGC-RiskIndicator-Graph,rgc_graph_mean_risk,float64,rgc_feature
+RGC-RiskIndicator-Graph,rgc_graph_max_risk,float64,rgc_feature
+RGC-RiskIndicator-Graph,rgc_graph_std_risk,float64,rgc_feature
+RGC-RiskIndicator-Graph,rgc_graph_mean_centrality,float64,rgc_feature
+RGC-RiskIndicator-Graph,rgc_graph_max_centrality,float64,rgc_feature
+RGC-RiskIndicator-Graph,rgc_graph_pressure_rank,float64,rgc_feature
+RGC-RiskIndicator-Graph,rgc_graph_pagerank_rank,float64,rgc_feature
+RGC-RiskIndicator-Graph,rgc_graph_degree_rank,float64,rgc_feature
+RGC-RiskIndicator-Graph,rgc_graph_signal,float64,rgc_feature
+RGC-RiskIndicator-Graph,rgc_prior_mean_risk,float64,rgc_feature
+RGC-RiskIndicator-Graph,rgc_prior_max_risk,float64,rgc_feature
+RGC-RiskIndicator-Graph,rgc_prior_std_risk,float64,rgc_feature
+RGC-RiskIndicator-Graph,rgc_prior_mean_high,float64,rgc_feature
+RGC-RiskIndicator-Graph,rgc_prior_max_high,float64,rgc_feature
+RGC-RiskIndicator-Graph,rgc_prior_mean_low,float64,rgc_feature
+RGC-RiskIndicator-Graph,rgc_prior_mean_moderate,float64,rgc_feature
+RGC-RiskIndicator-Graph,rgc_prior_mean_log_count,float64,rgc_feature
+RGC-RiskIndicator-Graph,rgc_fused_signal,float64,rgc_feature
+RGC-FullProposed,Type,object,baseline_feature
+RGC-FullProposed,Sales per customer,float64,baseline_feature
+RGC-FullProposed,Category Name,object,baseline_feature
+RGC-FullProposed,Customer City,object,baseline_feature
+RGC-FullProposed,Customer Country,object,baseline_feature
+RGC-FullProposed,Customer Segment,object,baseline_feature
+RGC-FullProposed,Customer State,object,baseline_feature
+RGC-FullProposed,Department Name,object,baseline_feature
+RGC-FullProposed,Market,object,baseline_feature
+RGC-FullProposed,Order City,object,baseline_feature
+RGC-FullProposed,Order Country,object,baseline_feature
+RGC-FullProposed,Order Item Discount,float64,baseline_feature
+RGC-FullProposed,Order Item Discount Rate,float64,baseline_feature
+RGC-FullProposed,Order Item Product Price,float64,baseline_feature
+RGC-FullProposed,Order Item Quantity,int64,baseline_feature
+RGC-FullProposed,Sales,float64,baseline_feature
+RGC-FullProposed,Order Item Total,float64,baseline_feature
+RGC-FullProposed,Order Region,object,baseline_feature
+RGC-FullProposed,Order State,object,baseline_feature
+RGC-FullProposed,Product Name,object,baseline_feature
+RGC-FullProposed,Product Price,float64,baseline_feature
+RGC-FullProposed,Product Status,int64,baseline_feature
+RGC-FullProposed,Shipping Mode,object,baseline_feature
+RGC-FullProposed,order_year,int64,baseline_feature
+RGC-FullProposed,order_month,int64,baseline_feature
+RGC-FullProposed,order_week,int64,baseline_feature
+RGC-FullProposed,order_day,int64,baseline_feature
+RGC-FullProposed,order_dayofweek,int64,baseline_feature
+RGC-FullProposed,order_quarter,int64,baseline_feature
+RGC-FullProposed,sales_per_unit,float64,baseline_feature
+RGC-FullProposed,qty_lag_1,float64,baseline_feature
+RGC-FullProposed,qty_lag_3,float64,baseline_feature
+RGC-FullProposed,qty_lag_7,float64,baseline_feature
+RGC-FullProposed,qty_roll_mean_3,float64,baseline_feature
+RGC-FullProposed,qty_roll_mean_7,float64,baseline_feature
+RGC-FullProposed,qty_roll_std_7,float64,baseline_feature
+RGC-FullProposed,delay_lag_1,float64,baseline_feature
+RGC-FullProposed,delay_roll_mean_7,float64,baseline_feature
+RGC-FullProposed,delay_roll_std_7,float64,baseline_feature
+RGC-FullProposed,profit_lag_1,float64,baseline_feature
+RGC-FullProposed,profit_roll_mean_7,float64,baseline_feature
+RGC-FullProposed,profit_roll_std_7,float64,baseline_feature
+RGC-FullProposed,delay_risk,float64,baseline_feature
+RGC-FullProposed,late_delivery_component,int64,baseline_feature
+RGC-FullProposed,demand_volatility_risk,float64,baseline_feature
+RGC-FullProposed,anomaly_risk,float64,baseline_feature
+RGC-FullProposed,shortage_exposure_risk,float64,baseline_feature
+RGC-FullProposed,profit_loss_risk,float64,baseline_feature
+RGC-FullProposed,shipping_risk,float64,baseline_feature
+RGC-FullProposed,shipping_mode_historical_late_rate,float64,baseline_feature
+RGC-FullProposed,rgc_graph_mean_risk,float64,rgc_feature
+RGC-FullProposed,rgc_graph_max_risk,float64,rgc_feature
+RGC-FullProposed,rgc_graph_std_risk,float64,rgc_feature
+RGC-FullProposed,rgc_graph_mean_centrality,float64,rgc_feature
+RGC-FullProposed,rgc_graph_max_centrality,float64,rgc_feature
+RGC-FullProposed,rgc_graph_pressure_rank,float64,rgc_feature
+RGC-FullProposed,rgc_graph_pagerank_rank,float64,rgc_feature
+RGC-FullProposed,rgc_graph_degree_rank,float64,rgc_feature
+RGC-FullProposed,rgc_graph_signal,float64,rgc_feature
+RGC-FullProposed,rgc_prior_mean_risk,float64,rgc_feature
+RGC-FullProposed,rgc_prior_max_risk,float64,rgc_feature
+RGC-FullProposed,rgc_prior_std_risk,float64,rgc_feature
+RGC-FullProposed,rgc_prior_mean_high,float64,rgc_feature
+RGC-FullProposed,rgc_prior_max_high,float64,rgc_feature
+RGC-FullProposed,rgc_prior_mean_low,float64,rgc_feature
+RGC-FullProposed,rgc_prior_mean_moderate,float64,rgc_feature
+RGC-FullProposed,rgc_prior_mean_log_count,float64,rgc_feature
+RGC-FullProposed,rgc_fused_signal,float64,rgc_feature
+RGC-FullProposed,rgc_prior_category_name_risk_mean,float64,rgc_feature
+RGC-FullProposed,rgc_prior_category_name_high_rate,float64,rgc_feature
+RGC-FullProposed,rgc_prior_category_name_log_count,float64,rgc_feature
+RGC-FullProposed,rgc_prior_category_name_low_rate,float64,rgc_feature
+RGC-FullProposed,rgc_prior_category_name_moderate_rate,float64,rgc_feature
+RGC-FullProposed,rgc_prior_product_name_risk_mean,float64,rgc_feature
+RGC-FullProposed,rgc_prior_product_name_high_rate,float64,rgc_feature
+RGC-FullProposed,rgc_prior_product_name_log_count,float64,rgc_feature
+RGC-FullProposed,rgc_prior_product_name_low_rate,float64,rgc_feature
+RGC-FullProposed,rgc_prior_product_name_moderate_rate,float64,rgc_feature
+RGC-FullProposed,rgc_prior_order_region_risk_mean,float64,rgc_feature
+RGC-FullProposed,rgc_prior_order_region_high_rate,float64,rgc_feature
+RGC-FullProposed,rgc_prior_order_region_log_count,float64,rgc_feature
+RGC-FullProposed,rgc_prior_order_region_low_rate,float64,rgc_feature
+RGC-FullProposed,rgc_prior_order_region_moderate_rate,float64,rgc_feature
+RGC-FullProposed,rgc_prior_market_risk_mean,float64,rgc_feature
+RGC-FullProposed,rgc_prior_market_high_rate,float64,rgc_feature
+RGC-FullProposed,rgc_prior_market_log_count,float64,rgc_feature
+RGC-FullProposed,rgc_prior_market_low_rate,float64,rgc_feature
+RGC-FullProposed,rgc_prior_market_moderate_rate,float64,rgc_feature
+RGC-FullProposed,rgc_prior_shipping_mode_risk_mean,float64,rgc_feature
+RGC-FullProposed,rgc_prior_shipping_mode_high_rate,float64,rgc_feature
+RGC-FullProposed,rgc_prior_shipping_mode_log_count,float64,rgc_feature
+RGC-FullProposed,rgc_prior_shipping_mode_low_rate,float64,rgc_feature
+RGC-FullProposed,rgc_prior_shipping_mode_moderate_rate,float64,rgc_feature
+RGC-FullProposed,rgc_prior_customer_segment_risk_mean,float64,rgc_feature
+RGC-FullProposed,rgc_prior_customer_segment_high_rate,float64,rgc_feature
+RGC-FullProposed,rgc_prior_customer_segment_log_count,float64,rgc_feature
+RGC-FullProposed,rgc_prior_customer_segment_low_rate,float64,rgc_feature
+RGC-FullProposed,rgc_prior_customer_segment_moderate_rate,float64,rgc_feature
+RGC-FullProposed,rgc_prior_department_name_risk_mean,float64,rgc_feature
+RGC-FullProposed,rgc_prior_department_name_high_rate,float64,rgc_feature
+RGC-FullProposed,rgc_prior_department_name_log_count,float64,rgc_feature
+RGC-FullProposed,rgc_prior_department_name_low_rate,float64,rgc_feature
+RGC-FullProposed,rgc_prior_department_name_moderate_rate,float64,rgc_feature
+RGC-FullProposed,rgc_prior_order_country_risk_mean,float64,rgc_feature
+RGC-FullProposed,rgc_prior_order_country_high_rate,float64,rgc_feature
+RGC-FullProposed,rgc_prior_order_country_log_count,float64,rgc_feature
+RGC-FullProposed,rgc_prior_order_country_low_rate,float64,rgc_feature
+RGC-FullProposed,rgc_prior_order_country_moderate_rate,float64,rgc_feature
+RGC-FullProposed,rgc_prior_order_state_risk_mean,float64,rgc_feature
+RGC-FullProposed,rgc_prior_order_state_high_rate,float64,rgc_feature
+RGC-FullProposed,rgc_prior_order_state_log_count,float64,rgc_feature
+RGC-FullProposed,rgc_prior_order_state_low_rate,float64,rgc_feature
+RGC-FullProposed,rgc_prior_order_state_moderate_rate,float64,rgc_feature
+RGC-FullProposed,rgc_prior_customer_country_risk_mean,float64,rgc_feature
+RGC-FullProposed,rgc_prior_customer_country_high_rate,float64,rgc_feature
+RGC-FullProposed,rgc_prior_customer_country_log_count,float64,rgc_feature
+RGC-FullProposed,rgc_prior_customer_country_low_rate,float64,rgc_feature
+RGC-FullProposed,rgc_prior_customer_country_moderate_rate,float64,rgc_feature
+RGC-FullProposed,rgc_interact_signal_x_order_item_quantity,float64,rgc_feature
+RGC-FullProposed,rgc_interact_signal_x_order_item_discount_rate,float64,rgc_feature
+RGC-FullProposed,rgc_interact_signal_x_sales,float64,rgc_feature
+RGC-FullProposed,rgc_interact_signal_x_order_item_total,float64,rgc_feature
+RGC-FullProposed,rgc_interact_signal_x_product_price,float64,rgc_feature
+RGC-FullProposed,rgc_interact_signal_x_sales_per_unit,float64,rgc_feature
+RGC-FullProposed,rgc_interact_signal_x_qty_roll_mean_7,float64,rgc_feature
+RGC-FullProposed,rgc_interact_signal_x_qty_roll_std_7,float64,rgc_feature

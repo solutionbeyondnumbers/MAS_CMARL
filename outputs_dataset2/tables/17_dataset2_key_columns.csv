@@ -1,0 +1,15 @@
+﻿column_group,column_name,description
+identifier,order_id,Order identifier
+identifier,order_item_id,Order item sequence identifier
+identifier,product_id,Product identifier
+identifier,seller_id,Seller identifier used as supplier proxy
+identifier,customer_id,Customer identifier
+time,order_purchase_timestamp,Temporal split and historical feature reference
+target,risk_label,"Numerical risk class: 0 Low, 1 Moderate, 2 High"
+target,risk_label_name,Text risk class
+score,dataset2_fulfillment_risk_score,Composite fulfilment-disruption risk score
+split,temporal_split,Leakage-aware chronological split
+graph_key,seller_id,Seller graph node
+graph_key,product_id,Product graph node
+graph_key,product_category_name_english,Category graph node
+graph_key,seller_customer_route,Seller-customer state route graph edge context

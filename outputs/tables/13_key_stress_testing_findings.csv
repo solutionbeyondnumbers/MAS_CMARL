@@ -1,0 +1,7 @@
+finding_no,finding_type,finding
+1,Overall stress robustness,"Across 13 extended stress scenarios, the proposed STHG-CMAPPO risk-service policy improved mean reward by 35.35% on average over the strongest risk-avoidance baseline."
+2,Risk-delay resilience,The proposed policy achieved average risk reduction of 8.61% and average delay reduction of 17.03% under extended stress testing.
+3,Service-resilience improvement,Average service improvement was 15.25% and average resilience improvement was 9.82% across stress scenarios.
+4,Best stress response,The strongest reward gain was observed under supplier_shock_severe with 45.78% reward improvement.
+5,Minimum stress response,The lowest reward gain was observed under normal with 26.63% reward improvement.
+6,Stress-test pass rate,The proposed policy passed 100.00% of stress scenarios using the five-metric robustness scorecard.

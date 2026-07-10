@@ -1,0 +1,9 @@
+﻿table_name,column_name,value,count,percent
+orders,order_status,delivered,96478,97.0203
+orders,order_status,shipped,1107,1.1132
+orders,order_status,canceled,625,0.6285
+orders,order_status,unavailable,609,0.6124
+orders,order_status,invoiced,314,0.3158
+orders,order_status,processing,301,0.3027
+orders,order_status,created,5,0.005
+orders,order_status,approved,2,0.002
